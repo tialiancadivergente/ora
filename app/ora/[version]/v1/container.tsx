@@ -7,6 +7,8 @@ import {
 
 import HeroSection from "./hero-section";
 import SecondSection from "./SecondSection";
+import ThirdSection from "./third-section";
+import FourthSection from "./fourth-section";
 import Footer from "./footer";
 
 interface ContainerProps {
@@ -26,17 +28,20 @@ export default function ContainerTeste({
 }: ContainerProps) {
 	return (
 		<>
-			<HeroSection
-				titleRedLine={titleRedLine}
-				redLine={redLine}
-				formName={formName}
-				onSubmit={onSubmit}
-				submitError={submitError}
-			/>
+			<>
+				<HeroSection
+					titleRedLine={titleRedLine}
+					redLine={redLine}
+					formName={formName}
+					onSubmit={onSubmit}
+					submitError={submitError}
+				/>
 
-			<SecondSection />
-
-			<Footer />
+				<SecondSection />
+				<ThirdSection />
+				<FourthSection />
+				<Footer />
+			</>
 		</>
 	);
 }
