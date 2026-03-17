@@ -5,10 +5,10 @@ export default function SecondSection() {
 		<section
 			className={`
 				w-full
-				min-h-[800px]
+				min-h-[1632px]
 				md:min-h-[961px]
 
-				bg-[url('/images/segunda-dobra-mobile.webp')]
+				bg-[url('/images/ora/v1/segunda_dobra_mobile.webp')]
 				md:bg-[url('/images/ora/v1/segunda_dobra_desktop.webp')]
 
 				bg-no-repeat
@@ -16,8 +16,11 @@ export default function SecondSection() {
 				bg-cover
 				flex
 				justify-center
-				items-center
+				items-start
+				md:items-center
 				px-6
+				pt-[550px]
+				md:pt-0
 			`}
 		>
 			<div
@@ -31,19 +34,15 @@ export default function SecondSection() {
 				"
 			>
 
-				{/* IMAGEM */}
 				<div className="hidden md:flex justify-center">
 					<img
 						src="/images/ora/v1/carteira-dinheiro.webp"
-						alt="dinheiro caindo"
+						alt=""
 						className="w-[420px]"
 					/>
 				</div>
 
-				{/* TEXTO */}
 				<div className="max-w-[513px]">
-
-					{/* TITULO */}
 					<h2
 						className="
 							font-[Spectral]
@@ -60,7 +59,6 @@ export default function SecondSection() {
 						E VOCÊ JÁ SENTE ISSO.
 					</h2>
 
-					{/* TEXTO */}
 					<div
 						className="
 							font-[Mulish]
@@ -70,7 +68,6 @@ export default function SecondSection() {
 							space-y-4
 						"
 					>
-
 						<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
 
 						<p>
@@ -130,10 +127,8 @@ export default function SecondSection() {
 							É a sua chance de ter acesso único, exclusivo
 							e gratuito aos mentores da Aliança Divergente.
 						</p>
-
 					</div>
 
-					{/* BOTÃO */}
 					<div className="mt-[16px]">
 						<button
 							className="
@@ -160,7 +155,6 @@ export default function SecondSection() {
 							QUERO ROMPER MEU TETO FINANCEIRO
 						</button>
 					</div>
-
 				</div>
 			</div>
 		</section>

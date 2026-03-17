@@ -40,7 +40,6 @@ export default function ContainerTeste({
 				<SecondSection />
 				<ThirdSection />
 				<FourthSection />
-				<Footer />
 			</>
 		</>
 	);
