@@ -1,5 +1,7 @@
 "use client";
 
+import { handleScroll } from "@/lib/utils";
+
 export default function SecondSection() {
 	return (
 		<section
@@ -131,26 +133,28 @@ export default function SecondSection() {
 
 					<div className="mt-[16px] md:mt-[32px]">
 						<button
+							onClick={() => handleScroll()}
 							className="
-								w-full
-								md:w-[513px]
-								h-[58px]
-								rounded-[8px]
-								text-[#071117]
-								font-[Mulish]
-								font-extrabold
-								text-[14px]
-								uppercase
-								flex
-								items-center
-								justify-center
-
-								bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
-
-								border
-								border-transparent
-								shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638,0px_90px_36px_#0B7D4612,0px_140px_39px_#0B7D4603]
-							"
+							w-[349px]
+							md:w-[513px]
+							h-[58px]
+							rounded-[8px]
+							border
+							border-transparent
+							bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
+							text-[#071117]
+							font-[Mulish]
+							font-extrabold
+							text-[14px]
+							uppercase
+							flex
+							items-center
+							justify-center
+							shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638,0px_90px_36px_#0B7D4612,0px_140px_39px_#0B7D4603]
+							hover:bg-[radial-gradient(50%_142.16%_at_50%_50%,#49FFC1_0%,#00B454_100%)]
+							hover:shadow-[0px_8px_16px_#0B7D4680,0px_32px_32px_#0B7D4660,0px_61px_40px_#0B7D4640]
+							hover:scale-[1.025]
+						"
 						>
 							QUERO ROMPER MEU TETO FINANCEIRO
 						</button>

@@ -74,15 +74,15 @@ export default function SplashScreenOro({ children, theme }: { children: React.R
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 flex flex-col items-center justify-center sm:bg-center bg-left bg-cover bg-no-repeat z-50"
-          style={{ backgroundImage: `${isDark ? "url('/images/v4/SplashScreenV4Dark.webp')" : "url('/images/v4/SplashScreenV4.webp')"}` }}
+          style={{ backgroundImage: `${isDark ? "url('/images/ora/quiz/bg-quiz.webp')" : "url('/images/ora/quiz/bg-quiz.webp')"}` }}
         >
           <motion.img 
-            src={isDark ? "/images/logo_o_resgate_dos_otimistas.webp" : "/images/logo-oro-dark.webp"} 
-            alt="Logo"
+            src={isDark ? "/images/ora/logo_o_proximo_nivel.png" : "/images/ora/logo_o_proximo_nivel.png"} 
+            alt="Logo O Proximo Nivel"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className={isDark ? 'w-[480px]' : 'w-[424px]'}
+            className="w-[175px] mb-8"
           />
           <div className="w-64 h-2 bg-[#07242c] rounded-full overflow-hidden">
             <motion.div 
@@ -90,7 +90,7 @@ export default function SplashScreenOro({ children, theme }: { children: React.R
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
-              style={{ backgroundColor: "#b91216" }}
+              style={{ backgroundColor: "#C0964B" }}
             ></motion.div>
           </div>
         </motion.div>
