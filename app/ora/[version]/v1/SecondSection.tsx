@@ -19,7 +19,7 @@ export default function SecondSection() {
 				items-start
 				md:items-center
 				px-6
-				pt-[550px]
+				pt-[510px]
 				md:pt-0
 			`}
 		>
@@ -129,7 +129,7 @@ export default function SecondSection() {
 						</p>
 					</div>
 
-					<div className="mt-[16px]">
+					<div className="mt-[16px] md:mt-[32px]">
 						<button
 							className="
 								w-full
