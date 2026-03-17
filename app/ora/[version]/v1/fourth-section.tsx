@@ -1,69 +1,76 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function FourthSection() {
     return (
         <section
             className="
 				w-full
-				min-h-[600px]
-				md:min-h-[800px]
+				min-h-[1180px]
+				md:min-h-[1008px]
 				bg-[#071117]
-				bg-[url('/images/seu-caminho/mobile.webp')]
-				md:bg-[url('/images/ora/v1/quarta_dobra_desktop.webp')]
+				bg-[url('/images/ora/v1/quarta_dobra_mobile_teste.webp')]
+				md:bg-[url('/images/ora/v1/quarta_dobra_desktop_teste.webp')]
 				bg-cover
 				bg-center
 				bg-no-repeat
 				flex
 				justify-center
 				px-2
-				py-7
+				pt-36
+				pb-6
 				md:px-4
-				md:py-8
+				md:pt-16
+				md:pb-8
 			"
         >
             <div
                 className="
 					w-full
 					max-w-[349px]
-					md:max-w-[631px]
-					bg-[#D8CCA7]
+					md:max-w-[512px]
 					px-4
-					pt-[28px]
-					pb-4
-					md:px-[59.5px]
-					md:pt-[28px]
+					mt-[80px]
+					pt-[6px]
+					md:mt-0
+					pb-3
+					md:px-[52px]
+					md:pt-[20px]
 					md:pb-6
 				"
             >
                 <h2
                     className="
-		text-center
-		text-[#00535D]
-		font-[Spectral]
-		text-[24px]
-		md:text-[32px]
-		leading-[120%]
-	"
+						text-center
+						text-[#00535D]
+						font-[Spectral]
+						text-[24px]
+						leading-[120%]
+						md:text-[26px]
+					"
                 >
                     Participe do{" "}
-                    <span className="font-bold italic border-b-2 border-[#B7A36D] pb-[2px]">
+                    <span className="relative inline-block font-bold italic">
                         Próximo Nível
+                        <span className="absolute left-1/2 -translate-x-1/2 bottom-[-1px] hidden h-0 w-[170px] rotate-[0.82deg] border-t-[2px] border-[#B7A36D] md:block" />
+                        <span className="absolute left-1/2 -translate-x-1/2 bottom-[-4px] block h-0 w-[160px] border-t-[2px] border-[#B7A36D] md:hidden" />
                     </span>
                 </h2>
 
                 <div
                     className="
-						mt-4
-						md:mt-3
+						mt-3
 						text-center
 						text-[#003036]
 						font-[Mulish]
 						text-[14px]
-						leading-[145%]
+						leading-[140%]
 						font-normal
-						md:text-[16px]
+						md:mt-3
+						md:text-[14px]
+						md:leading-[145%]
 					"
                 >
                     <p>
@@ -71,36 +78,38 @@ export default function FourthSection() {
                         Divergente 2.0
                     </p>
 
-                    <p className="mt-3">
+                    <p className="mt-3 md:mt-3">
                         Um encontro ao vivo com os mentores da Aliança Divergente pra
                         quem já viveu o método, sabe que funciona, mas ainda precisa
                         romper o teto financeiro.
                     </p>
 
-                    <p className="mt-3 font-bold">Nesse encontro você vai:</p>
+                    <p className="mt-3 md:mt-3 font-bold">Nesse encontro você vai:</p>
                 </div>
 
-                <div className="mt-4 md:mt-5 space-y-3">
+                <div className="mt-4 md:mt-4 space-y-2 md:space-y-[4px]">
                     <div
                         className="
 							w-full
 							bg-[#B7A36D]
-							px-6
-							py-4
-							min-h-[70px]
-							md:min-h-[78px]
+							px-4
+							py-3
+							min-h-[60px]
 							flex
 							items-center
+							md:min-h-[77px]
+							md:px-[14px]
+							md:py-[10px]
 						"
                     >
                         <p
                             className="
 								text-[#003036]
 								font-[Mulish]
-								text-[14px]
-								leading-[135%]
+								text-[13px]
+								leading-[130%]
 								font-bold
-								md:text-[16px]
+								md:text-[14px]
 								md:leading-[145%]
 							"
                         >
@@ -113,22 +122,24 @@ export default function FourthSection() {
                         className="
 							w-full
 							bg-[#B7A36D]
-							px-6
-							py-4
-							min-h-[70px]
-							md:min-h-[78px]
+							px-4
+							py-3
+							min-h-[60px]
 							flex
 							items-center
+							md:min-h-[63px]
+							md:px-[14px]
+							md:py-[10px]
 						"
                     >
                         <p
                             className="
 								text-[#003036]
 								font-[Mulish]
-								text-[14px]
-								leading-[135%]
+								text-[13px]
+								leading-[130%]
 								font-bold
-								md:text-[16px]
+								md:text-[14px]
 								md:leading-[145%]
 							"
                         >
@@ -141,21 +152,23 @@ export default function FourthSection() {
                         className="
 							w-full
 							bg-[#B7A36D]
-							px-6
-							py-4
-							min-h-[200px]
-							md:min-h-[163px]
+							px-4
+							py-3
+							min-h-[142px]
 							flex
 							items-start
+							md:min-h-[93px]
+							md:px-[14px]
+							md:py-[10px]
 						"
                     >
                         <div
                             className="
 								text-[#003036]
 								font-[Mulish]
-								text-[14px]
-								leading-[135%]
-								md:text-[16px]
+								text-[13px]
+								leading-[130%]
+								md:text-[14px]
 								md:leading-[145%]
 							"
                         >
@@ -164,42 +177,76 @@ export default function FourthSection() {
                                 levar ao seu próximo nível, te dando:
                             </p>
 
-                            <div className="mt-4">
+                            <div className="mt-3 md:mt-3">
                                 <p>
                                     Dinheiro sobrando na conta todo mês. Independência
-                                    <br />
                                     financeira de verdade. Quitação das dívidas que arrastam.
-                                    <br />
-                                    Estabilidade pra planejar o futuro com tranquilidade
+                                    Estabilidade pra planejar o futuro com tranquilidade.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="mt-5 md:mt-6">
+                <div className="mt-4 md:mt-[20px] w-full">
                     <button
                         className="
-							w-full
-							min-h-[58px]
-							rounded-[8px]
-							border
-							px-12
-							py-4
-							font-[Mulish]
-							text-[14px]
-							leading-[145%]
-							font-extrabold
-							uppercase
-							text-[#07210F]
-							bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
-							shadow-[0px_6px_12px_0px_#0B7D466E,0px_22px_22px_0px_#0B7D465E,0px_51px_30px_0px_#0B7D4638,0px_90px_36px_0px_#0B7D4612,0px_140px_39px_0px_#0B7D4603]
-							border-[#1E8B4C]
-						"
+			w-full
+			h-[54px]
+			md:h-[58px]
+			rounded-[8px]
+			border
+			px-[24px]
+			py-[14px]
+			flex
+			items-center
+			justify-center
+			gap-[10px]
+
+			font-[Mulish]
+			text-[12px]
+			md:text-[14px]
+			leading-[145%]
+			font-extrabold
+			uppercase
+
+			text-[#07210F]
+			bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
+
+			shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638]
+
+			border-[#1E8B4C]
+		"
                     >
                         QUERO ROMPER MEU TETO FINANCEIRO
                     </button>
                 </div>
+
+                {/* BLOCO DO RODAPÉ CONTROLADO SEPARADAMENTE NO MOBILE */}
+
+                <div className="mt-[280px] md:mt-36 md:translate-y-[60px] flex flex-col items-center justify-center gap-3 md:gap-4">
+                    <Image
+                        src="/images/ora/v1/logo_roda_pe.png"
+                        alt="Logo"
+                        width={160}
+                        height={70}
+                        className="object-contain w-[140px] md:w-[160px] h-auto"
+                    />
+
+                    <p
+                        className="
+							text-center
+							text-white
+							font-raleway
+							font-normal
+							text-[14px]
+							md:text-[16px]
+							leading-[100%]
+						"
+                    >
+                        2026 Aliança Divergente © Todos os Direitos Reservados.
+                    </p>
+                </div>
+
             </div>
         </section>
     );

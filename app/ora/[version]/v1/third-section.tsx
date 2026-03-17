@@ -9,7 +9,7 @@ export default function ThirdSection() {
 				w-full
 				min-h-[1100px]
 				md:min-h-[760px]
-				bg-[url('/images/terceira-dobra-mobile.webp')]
+				bg-[url('/images/ora/v1/terceira_dobra_mobile.webp.webp')]
 				md:bg-[url('/images/ora/v1/terceira_dobra_desktop.webp')]
 				bg-no-repeat
 				bg-center
@@ -28,17 +28,19 @@ export default function ThirdSection() {
 						flex
 						flex-col
 						md:flex-row
-						items-stretch
+						items-center
+						md:items-stretch
 						justify-center
 						gap-4
-						md:gap-3
+						md:gap-2
 					"
 				>
 					<div
 						className="
 							w-full
 							max-w-[349px]
-							md:max-w-[424px]
+							md:w-[424px]
+							md:max-w-none
 							min-h-[360px]
 							md:min-h-[480px]
 							rounded-[16px]
@@ -50,6 +52,8 @@ export default function ThirdSection() {
 							border
 							border-[rgba(211,0,0,0.45)]
 							bg-[linear-gradient(141.1deg,rgba(90,0,0,0)_0%,rgba(90,0,0,0.25)_100%)]
+							mx-auto
+							md:mx-0
 						"
 					>
 						<div className="w-[56px] h-[3px] bg-[#D30000]" />
@@ -135,7 +139,8 @@ export default function ThirdSection() {
 						className="
 							w-full
 							max-w-[349px]
-							md:max-w-[424px]
+							md:w-[424px]
+							md:max-w-none
 							min-h-[360px]
 							md:min-h-[480px]
 							rounded-[16px]
@@ -147,6 +152,8 @@ export default function ThirdSection() {
 							border
 							border-[rgba(48,204,121,0.55)]
 							bg-[linear-gradient(141.1deg,rgba(12,83,46,0)_0%,rgba(12,83,46,0.25)_100%)]
+							mx-auto
+							md:mx-0
 						"
 					>
 						<div className="w-[56px] h-[3px] bg-[#30CC79]" />
