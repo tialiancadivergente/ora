@@ -70,7 +70,7 @@ export function LeadCaptureForm({
   phoneInputClassName,
   buttonClassName,
   defaultValues,
-  submitLabel = "PARTICIPAR GRATUITAMENTE",
+  submitLabel = "QUERO ROMPER MEU TETO FINANCEIRO",
   submittingLabel = "ENVIANDO...",
   submitError,
   onSubmit,
