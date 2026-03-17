@@ -159,6 +159,7 @@ export default function HeroSection({
 						formName={formName}
 						onSubmit={onSubmit}
 						submitError={submitError}
+						nameInputClassName="w-full h-[52px] md:h-[56px] px-[16px] rounded-[8px] border border-[#6F6F6F] bg-[#0404040A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] outline-none"
 						emailInputClassName="w-full h-[52px] md:h-[56px] px-[16px] rounded-[8px] border border-[#6F6F6F] bg-[#0404040A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] outline-none"
 						ddiSelectClassName="h-[52px] md:h-[56px] py-4 pl-[40px] pr-[28px] bg-[#FFFFFF1A] rounded-l-[8px] border border-[#6F6F6F] border-r-[0px] text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none appearance-none"
 						phoneInputClassName="w-full !h-[52px] md:!h-[56px] px-[16px] py-4 rounded-r-[8px] bg-[#0404040A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none border border-[#6F6F6F] border-l-[0px]"

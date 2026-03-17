@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { PHONE_DDI_OPTIONS } from "@/lib/config/phone-ddi-options";
 import { cn } from "@/lib/utils";
 import { leadCaptureFormSchema, LeadCaptureFormValues } from "@/app/modules/lead-capture/lead-capture.model";
+import { number, string } from "zod";
 
 export interface LeadCaptureSubmitData extends LeadCaptureFormValues {
   normalizedPhone: string;
@@ -17,6 +18,7 @@ export interface LeadCaptureFormProps {
   formName?: string;
   className?: string;
   emailInputClassName: string;
+  nameInputClassName: string;
   ddiSelectClassName: string;
   phoneInputClassName: string;
   buttonClassName: string;
@@ -66,6 +68,7 @@ export function LeadCaptureForm({
   formName,
   className,
   emailInputClassName,
+  nameInputClassName,
   ddiSelectClassName,
   phoneInputClassName,
   buttonClassName,
@@ -84,6 +87,7 @@ export function LeadCaptureForm({
   } = useForm<LeadCaptureFormValues>({
     resolver: zodResolver(leadCaptureFormSchema),
     defaultValues: {
+      name: "",
       email: "",
       ddi: "+55",
       whatsapp: "",
@@ -107,6 +111,18 @@ export function LeadCaptureForm({
       className={cn("space-y-4 w-full", className)}
       onSubmit={handleSubmit(submitHandler)}
     >
+      <div>
+        <Input
+          id="form-field-name"
+          placeholder="Seu nome"
+          className={nameInputClassName}
+          style={{ fontFamily: "Arial, sans-serif" }}
+          {...register("name")}
+        />
+        {errors.name ? (
+          <p className="mt-1 text-sm !text-red-300">{errors.name.message}</p>
+        ) : null}
+      </div>
       <div>
         <Input
           id="form-field-email"

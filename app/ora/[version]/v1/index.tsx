@@ -151,6 +151,7 @@ export default function Formv1() {
       // ************* FINAL - CODIGO LEGADO *************
 
       const payload: LeadRegistrationPayload = {
+        name: data.name,
         email: data.email,
         telefone: data.normalizedPhone,
         launch,

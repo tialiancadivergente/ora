@@ -133,7 +133,7 @@ export default function SecondSection() {
 
 					<div className="mt-[16px] md:mt-[32px]">
 						<button
-							onClick={() => handleScroll()}
+							onClick={handleScroll}
 							className="
 							w-[349px]
 							md:w-[513px]

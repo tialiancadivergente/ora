@@ -37,6 +37,7 @@ export interface LeadRegistrationMetadados {
 }
 
 export interface LeadRegistrationPayload {
+  name: string;
   email: string;
   telefone: string;
   launch: string;
@@ -68,6 +69,7 @@ export interface LeadCaptureStartResponse {
 }
 
 export const leadCaptureFormSchema = z.object({
+  name: z.string().trim().min(3, "Informe um nome valido."),
   email: z.string().trim().email("Informe um e-mail valido."),
   ddi: z.string().min(1, "Selecione um DDI."),
   whatsapp: z.string().trim().min(15, "Informe um WhatsApp valido."),
