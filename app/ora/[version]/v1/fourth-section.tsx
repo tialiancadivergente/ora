@@ -187,47 +187,38 @@ export default function FourthSection() {
                         </div>
                     </div>
                 </div>
+                <div className="mt-4 md:mt-[20px] w-full">
+                    <button
+                        className="
+			w-full
+			h-[54px]
+			md:h-[58px]
+			rounded-[8px]
+			border
+			px-[24px]
+			py-[14px]
+			flex
+			items-center
+			justify-center
+			gap-[10px]
 
-                <div className="mt-0 md:mt-0 flex justify-center">
-                    <div className="mt-4 md:mt-[16px] flex justify-center">
-                        <div className="mt-4 md:mt-[16px]">
-                            <div className="mt-4 md:mt-[16px]">
-                                <div className="mt-0 md:mt-[4px] flex justify-center">
-                                    <button
-                                        className="
-        -mt-[12px]
-        w-full
-        h-[54px]
-        rounded-[8px]
-        border
-        px-[24px]
-        py-[14px]
-        flex
-        items-center
-        justify-center
-        gap-[10px]
+			font-[Mulish]
+			text-[12px]
+			md:text-[14px]
+			leading-[145%]
+			font-extrabold
+			uppercase
 
-        font-[Mulish]
-        text-[12px]
-        md:text-[14px]
-        leading-[145%]
-        font-extrabold
-        uppercase
+			text-[#07210F]
+			bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
 
-        text-[#07210F]
-        bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
+			shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638]
 
-        shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638]
-
-        border-[#1E8B4C]
-    "
-                                    >
-                                        QUERO ROMPER MEU TETO FINANCEIRO
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+			border-[#1E8B4C]
+		"
+                    >
+                        QUERO ROMPER MEU TETO FINANCEIRO
+                    </button>
                 </div>
 
                 {/* BLOCO DO RODAPÉ CONTROLADO SEPARADAMENTE NO MOBILE */}
