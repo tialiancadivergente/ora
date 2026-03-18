@@ -131,11 +131,11 @@ export default function SecondSection() {
 						</p>
 					</div>
 
-					<div className="mt-[16px] md:mt-[32px]">
+					<div className="mt-[16px] md:mt-[32px] mb-8 md:mb-0">
 						<button
 							onClick={handleScroll}
 							className="
-							w-[349px]
+							w-full
 							md:w-[513px]
 							h-[58px]
 							rounded-[8px]

@@ -234,7 +234,7 @@ export default function FourthSection() {
 
 			{/* BLOCO DO RODAPÉ CONTROLADO SEPARADAMENTE NO MOBILE */}
 
-			<div className="mt-[280px] md:mt-56 md:translate-y-[60px] flex flex-col items-center justify-center gap-3 md:gap-4">
+			<div className="mt-[260px] md:mt-56 mb-4 md:mb-0 md:translate-y-[60px] flex flex-col items-center justify-center gap-14 md:gap-4">
 				<Image
 					src="/images/ora/v1/logo_roda_pe.png"
 					alt="Logo"
@@ -247,15 +247,16 @@ export default function FourthSection() {
 					className="
 							text-center
 							text-white
-							font-raleway
 							font-normal
 							text-[14px]
 							md:text-[16px]
-							leading-[100%]
 							md:mt-4
+							font-spectral
 						"
 				>
-					© 2026 Aliança Divergente — Todos os Direitos Reservados 
+					© 2026 Aliança Divergente
+					<span className="hidden md:inline"> — </span>
+					<span className="block md:inline">Todos os Direitos Reservados</span>
 				</p>
 			</div>
 		</section >
