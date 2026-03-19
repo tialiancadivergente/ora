@@ -2,8 +2,8 @@ export const TEMPERATURE_TAG_MAP: Record<string, number> = {
   'q': 120681,
   'm': 120681,
   'f': 120681,
-  'o': 0,
-  'org': 0
+  'o': 120695,
+  'org': 120695
 };
 
 export const NORMALIZED_TEMPERATURE_VALUES = ["q", "f", "m", "org"] as const;
@@ -15,8 +15,8 @@ export const TEMPERATURE_TAG_MAP_ORO: Record<string, string> = {
   'q': '[ORA] MAR26 Quente',
   'm': '[ORA] MAR26 Morno',
   'f': '[ORA] MAR26 FRIO',
-  'o': '[ORA] MAR26 [ORGANICO]',
-  'org': '[ORA] MAR26 [ORGANICO]'
+  'o': '[ORA] MAR26 ORGANICO',
+  'org': '[ORA] MAR26 ORGANICO'
 };
 
 export const getTagIdByTemperature = (temperature: string): number | null => {
