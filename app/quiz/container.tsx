@@ -237,6 +237,18 @@ export default function ContainerQuest({
                 </div>
               </div>
 
+              <p className="text-white text-xs text-center mb-4 md:mb-5 max-w-[400px] mx-auto">
+                Apos responder as questões, toque no botão abaixo
+                para receber o link e materiais do evento:
+              </p>
+
+              <Button
+                className="w-full max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)]"
+                onClick={() => window.open(whatsappUrl, "_blank")}
+              >
+                Entrar no Grupo
+              </Button>
+
               {/* <div className="mb-6 md:mb-8 text-center text-white">
                 <p
                   className="dark:text-white light:text-[#07242C] text-xs md:text-sm mb-4 md:mb-5"
