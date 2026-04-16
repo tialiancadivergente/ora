@@ -237,8 +237,12 @@ export default function ContainerQuest({
                 </div>
               </div>
 
-              <p className="text-white text-xs text-center mb-4 md:mb-5 max-w-[400px] mx-auto">
-                Apos responder as questões, toque no botão abaixo
+              <p
+                className="dark:text-white light:text-[#07242C] text-xs md:text-sm mb-4 md:mb-5"
+                style={{ fontFamily: '"Roboto", Sans-serif' }}
+              >
+                Após responder as questões, toque no botão abaixo
+                <br className="hidden md:block" />
                 para receber o link e materiais do evento:
               </p>
 
