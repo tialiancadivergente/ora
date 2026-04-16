@@ -15,39 +15,33 @@ import {
   type NormalizedTemperature,
 } from "@/lib/temperature-utils";
 import { useCreateLeadCapture } from "@/app/modules/lead-capture/hook/use-create-lead-capture";
-import type {
-  LeadRegistrationPayload,
-} from "@/app/modules/lead-capture/lead-capture.model";
+import type { LeadRegistrationPayload } from "@/app/modules/lead-capture/lead-capture.model";
 import ContainerTeste from "./container";
+import SplashScreen from "./SplashScreen";
 import { Headline } from "./headline";
 
 export default function Formv2() {
   const params = useParams();
   const searchParams = useSearchParams();
-  const [titleRedLine, setTitleRedLine] = useState<React.ReactNode | null>(
-    null
-  );
+  const [titleRedLine, setTitleRedLine] = useState<React.ReactNode | null>(null);
   const [redLine, setRedLine] = useState<React.ReactNode | null>(null);
   const [temperatura, setTemperatura] = useState<NormalizedTemperature | undefined>(
     undefined
   );
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [formFields, setFormFields] = useState<Record<string, string> | null>(
-    null
-  );
+  const [formFields, setFormFields] = useState<Record<string, string> | null>(null);
 
   const { launch, season, tag_id } = LEAD_TRACK_CONFIG;
 
   const mutationCreate = useCreateLeadCapture();
 
-  // ************* INICIO - CODIGO LEGADO ************* 
+  // ************* INICIO - CODIGO LEGADO *************
   // Capturar UTMs da queryString
   useEffect(() => {
     if (searchParams) {
       const utmParams: Record<string, string> = {};
       let hasUtm = false;
 
-      // Lista de parâmetros UTM comuns
       const utmKeys = [
         "utm_source",
         "utm_medium",
@@ -57,7 +51,6 @@ export default function Formv2() {
         "utm_id",
       ];
 
-      // Verificar cada parâmetro UTM
       utmKeys.forEach((key) => {
         const value = searchParams.get(key);
         if (value) {
@@ -66,7 +59,6 @@ export default function Formv2() {
         }
       });
 
-      // Adicionar outros parâmetros da query que não são UTM
       searchParams.forEach((value, key) => {
         if (!utmKeys.includes(key) && key !== "temperatura") {
           utmParams[key] = value;
@@ -74,14 +66,13 @@ export default function Formv2() {
         }
       });
 
-      // Definir formFields apenas se houver UTMs
       if (hasUtm) {
         console.log("UTM params:", utmParams);
         setFormFields(utmParams);
       }
     }
   }, [searchParams]);
-  // ************* FINAL - CODIGO LEGADO ************* 
+  // ************* FINAL - CODIGO LEGADO *************
 
   useEffect(() => {
     if (params && params.temperature) {
@@ -132,7 +123,6 @@ export default function Formv2() {
         path: window.location.pathname,
       };
 
-      // Adicionar formFields ao payload apenas se existir
       if (formFields) {
         payloadDynamo.formFields = formFields;
       }
@@ -186,7 +176,9 @@ export default function Formv2() {
 
       window.location.href = `/quiz/?temperature=${temperatura}&requestId=${encodeURIComponent(
         requestId
-      )}&email=${encodeURIComponent(data.email)}&phone=${encodeURIComponent(data.normalizedPhone)}`;
+      )}&email=${encodeURIComponent(data.email)}&phone=${encodeURIComponent(
+        data.normalizedPhone
+      )}`;
     } catch (error) {
       console.error("Erro ao enviar cadastro:", error);
       setSubmitError("Nao foi possivel enviar seu cadastro agora.");
@@ -194,12 +186,14 @@ export default function Formv2() {
   };
 
   return (
-    <ContainerTeste
-      titleRedLine={titleRedLine}
-      redLine={redLine}
-      formName={launch}
-      onSubmit={handleLeadCaptureSubmit}
-      submitError={submitError}
-    />
+    <SplashScreen>
+      <ContainerTeste
+        titleRedLine={titleRedLine}
+        redLine={redLine}
+        formName={launch}
+        onSubmit={handleLeadCaptureSubmit}
+        submitError={submitError}
+      />
+    </SplashScreen>
   );
 }

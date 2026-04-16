@@ -8,12 +8,8 @@ import SplashScreenOro from "@/app/components/SplashScreen/SplashScreenOro";
 export default function Home() {
   const { version } = useParams();
 
-    if (version === "v2") {
-    return (
-      <SplashScreenOro>
-        <Formv2 />
-      </SplashScreenOro>
-    )
+  if (version === "v2") {
+    return <Formv2 />;
   }
 
   return (
