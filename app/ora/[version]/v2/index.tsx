@@ -35,8 +35,6 @@ export default function Formv2() {
 
   const mutationCreate = useCreateLeadCapture();
 
-  // ************* INICIO - CODIGO LEGADO *************
-  // Capturar UTMs da queryString
   useEffect(() => {
     if (searchParams) {
       const utmParams: Record<string, string> = {};
@@ -72,7 +70,6 @@ export default function Formv2() {
       }
     }
   }, [searchParams]);
-  // ************* FINAL - CODIGO LEGADO *************
 
   useEffect(() => {
     if (params && params.temperature) {
@@ -108,7 +105,6 @@ export default function Formv2() {
       const { utmObject, getUtmValue } = getTrackingUtmInfo();
       const cookies = getTrackingCookies();
 
-      // ************* INICIO - CODIGO LEGADO *************
       const payloadDynamo: Record<string, any> = {
         email: data.email,
         phone: data.normalizedPhone,
@@ -138,7 +134,6 @@ export default function Formv2() {
       if (!responseDynamo.ok) {
         throw new Error("Falha ao registrar lead no dynamo");
       }
-      // ************* FINAL - CODIGO LEGADO *************
 
       const payload: LeadRegistrationPayload = {
         name: data.name,
@@ -174,7 +169,7 @@ export default function Formv2() {
         throw new Error("requestId nao retornado na resposta.");
       }
 
-      window.location.href = `/quiz/?temperature=${temperatura}&requestId=${encodeURIComponent(
+      window.location.href = `/ora/v2/quiz?temperature=${temperatura}&requestId=${encodeURIComponent(
         requestId
       )}&email=${encodeURIComponent(data.email)}&phone=${encodeURIComponent(
         data.normalizedPhone
