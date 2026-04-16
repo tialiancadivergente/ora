@@ -169,7 +169,8 @@ export default function Formv2() {
         throw new Error("requestId nao retornado na resposta.");
       }
 
-      window.location.href = `/ora/v2/quiz?temperature=${temperatura}&requestId=${encodeURIComponent(
+      // 🔥 AQUI FOI CORRIGIDO
+      window.location.href = `/quiz-rdr?temperature=${temperatura}&requestId=${encodeURIComponent(
         requestId
       )}&email=${encodeURIComponent(data.email)}&phone=${encodeURIComponent(
         data.normalizedPhone
