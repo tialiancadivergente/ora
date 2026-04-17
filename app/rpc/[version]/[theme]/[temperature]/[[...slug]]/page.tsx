@@ -1,13 +1,13 @@
 "use client";
 
-import SplashScreenOro from "@/app/components/SplashScreen/SplashScreenOro";
-import RpcV1 from "../../../v1";
+import SplashScreen from "@/app/ora/[version]/v2/SplashScreen";
+import RpcV2 from "../../../v2";
 
 export default function Home() {
 
   return (
-    <SplashScreenOro>
-      <RpcV1 />
-    </SplashScreenOro>
+    <SplashScreen>
+      <RpcV2 />
+    </SplashScreen>
   );
 }

@@ -7,9 +7,11 @@ interface CustomRadioProps {
   onChange: (value: string) => void
   className?: string,
   style?: React.CSSProperties
+  textColorLabel?: string
+  borderColorRadio?: string
 }
 
-export function CustomRadio({ options, value, onChange, className, style }: CustomRadioProps) {
+export function CustomRadio({ options, value, onChange, className, style, textColorLabel = "text-white", borderColorRadio = "border-white" }: CustomRadioProps) {
   return (
     <div className={className} style={style}>
       {options.map((option) => (
@@ -20,12 +22,12 @@ export function CustomRadio({ options, value, onChange, className, style }: Cust
         >
           <div
             className={`h-4 w-4 md:h-3 md:w-3 rounded-full border-2  ${
-              value === option.value ? "border-white bg-white" : "border-white"
+              value === option.value ? `${borderColorRadio} bg-white` : borderColorRadio
             } flex items-center justify-center`}
           >
             {value === option.value && <div className="h-3.5 w-3.5 md:h-2.5 md:w-2.5 rounded-full bg-blue-500"></div>}
           </div>
-          <Label className="text-white cursor-pointer text-sm md:text-base">{option.label}</Label>
+          <Label className={`${textColorLabel} cursor-pointer text-sm md:text-base`}>{option.label}</Label>
         </div>
       ))}
     </div>
