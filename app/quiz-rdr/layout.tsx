@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "O Resgate dos Otimistas - Diagnostico de Dependencia Emocional",
+  title: "O Resgate dos Relacionamentos",
   description:
     "Faca seu diagnostico de dependencia emocional gratuito e descubra como aumentar seu nivel de permissao.",
 };
