@@ -63,23 +63,8 @@ export default function ContainerQuest({
   return (
     <>
       <HeroSection
-        isFetchingQuestions={isFetchingQuestions}
-        fetchError={fetchError}
-        fetchQuestions={fetchQuestions}
-        currentQuestionData={currentQuestionData}
-        submitError={submitError}
-        submitSuccess={submitSuccess}
         totalQuestions={totalQuestions}
-        selectedSingleValue={selectedSingleValue}
-        selectedMultipleValue={selectedMultipleValue}
-        handleAnswer={handleAnswer}
-        handleMultipleAnswer={handleMultipleAnswer}
         currentQuestion={currentQuestion}
-        handleBack={handleBack}
-        handleNext={handleNext}
-        isCurrentQuestionAnswered={isCurrentQuestionAnswered}
-        isSubmittingAnswers={isSubmittingAnswers}
-        whatsappUrl={whatsappUrl}
         theme={theme}
       />
 
