@@ -25,7 +25,7 @@ export default function HeroSection({ theme }: ContainerQuestProps) {
 	}, [theme]);
 
 	return (
-		<section className="w-full flex flex-col items-center justify-start bg-[#006D71] px-4 pt-10 md:pt-16">
+		<section className="w-full flex flex-col items-center justify-start bg-[#C0964B] px-4 py-12 md:py-16">
 			
 			<div className="w-full max-w-[960px] mx-auto flex flex-col items-center">
 				
@@ -54,11 +54,11 @@ export default function HeroSection({ theme }: ContainerQuestProps) {
 					</span>
 				</div>
 
-				<div className="w-full max-w-[900px] mx-auto mb-0">
+				<div className="w-full max-w-[900px] mx-auto">
 					<div className="relative h-[44px] md:h-[52px] bg-white/20 overflow-hidden px-4 flex items-center rounded-sm">
 						
 						<div
-							className="absolute left-0 top-0 h-full bg-[#25D366]"
+							className="absolute left-0 top-0 h-full bg-[#006D71]"
 							style={{ width: `${progress}%` }}
 						/>
 
