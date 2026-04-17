@@ -42,7 +42,7 @@ export default function HeroSection({
 
 	return (
 		<>
-			<div className="absolute top-0 left-0 z-20 flex md:hidden w-full h-[68px] items-center justify-center bg-[#917E5A] px-[65px] py-[10px]">
+			<div className="absolute top-0 left-0 z-20 flex md:hidden w-full h-[70px] items-center justify-center bg-[#917E5A] px-[65px] py-[10px]">
 				<p className="text-center font-spectral italic text-white text-[15px] leading-[24px]">
 					<span className="font-bold">
 						Segunda-feira, 27 de abril
@@ -55,8 +55,8 @@ export default function HeroSection({
 				</p>
 			</div>
 
-			<div className="absolute top-0 left-0 z-20 hidden md:flex h-[35px] w-full items-center justify-center bg-[#917E5A] py-[8px]">
-				<p className="text-center font-spectral italic text-white text-[15px] leading-[100%]">
+			<div className="absolute top-0 left-0 z-20 hidden md:flex h-[50px] w-full items-center justify-center bg-[#917E5A] py-[8px]">
+				<p className="text-center font-spectral italic text-white text-[20px] leading-[100%]">
 					<span className="font-bold">
 						Segunda-feira, 27 de abril
 					</span>
@@ -101,7 +101,7 @@ export default function HeroSection({
 						italic
 						text-[#006D71]
 						text-[24px]
-						leading-[120%]
+						leading-[150%]
 						w-full
 						max-w-[349px]
 						md:w-[521px]
