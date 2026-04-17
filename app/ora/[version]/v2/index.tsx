@@ -19,6 +19,8 @@ import type { LeadRegistrationPayload } from "@/app/modules/lead-capture/lead-ca
 import ContainerTeste from "./container";
 import SplashScreen from "./SplashScreen";
 import { Headline } from "./headline";
+import { buildPaginaWordpressAliancaPayload } from "@/lib/webhooks/pagina-wordpress-alianca";
+import { usePaginaWordpressAliancaWebhook } from "@/app/modules/lead-capture/hook/use-pagina-wordpress-alianca-webhook";
 
 export default function Formv2() {
   const params = useParams();
@@ -34,6 +36,7 @@ export default function Formv2() {
   const { launch, season, tag_id } = LEAD_TRACK_CONFIG;
 
   const mutationCreate = useCreateLeadCapture();
+  const mutationPaginaWordpress = usePaginaWordpressAliancaWebhook();
 
   useEffect(() => {
     if (searchParams) {
@@ -168,6 +171,19 @@ export default function Formv2() {
       if (!requestId) {
         throw new Error("requestId nao retornado na resposta.");
       }
+
+      const paginaWordpressPayload = buildPaginaWordpressAliancaPayload({
+        launch,
+        season,
+        temperatura,
+        lead: {
+          phone: data.normalizedPhone,
+          email: data.email,
+        },
+        getUtmValue,
+      });
+
+      await mutationPaginaWordpress.mutateAsync(paginaWordpressPayload);
 
       // 🔥 AQUI FOI CORRIGIDO
       window.location.href = `/quiz-rdr?temperature=${temperatura}&requestId=${encodeURIComponent(
