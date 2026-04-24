@@ -2,10 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import {
 	LeadCaptureForm,
 	LeadCaptureSubmitData,
 } from "./lead-capture-form-ora";
+import { Headline } from "./headline";
 
 interface ContainerProps {
 	titleRedLine: React.ReactNode | null;
@@ -20,6 +22,15 @@ export default function HeroSection({
 	onSubmit,
 	submitError,
 }: ContainerProps) {
+	const params = useParams();
+
+	const headlineId = Array.isArray(params.headline)
+		? params.headline[0]
+		: params.headline;
+
+	const currentHeadline =
+		Headline.find((item) => item.id === headlineId) ?? Headline[0];
+
 	const eventSchema = {
 		"@context": "https://schema.org",
 		"@type": "Event",
@@ -66,6 +77,7 @@ export default function HeroSection({
 					</span>
 				</p>
 			</div>
+
 			<section
 				id="hero"
 				aria-label="Seção principal do evento O Resgate dos Relacionamentos"
@@ -84,6 +96,7 @@ export default function HeroSection({
 				</h2>
 
 				<div className="w-full max-w-[349px] md:w-[600px] md:max-w-none md:h-full flex flex-col items-start md:items-start justify-center text-left md:text-left mt-24 md:mt-0 lg:ml-[120px] xl:ml-[280px] mx-auto md:mx-0 md:bg-[#E9E7E4] md:px-[40px] md:pt-[64px] md:pb-[64px]">
+					
 					<div className="mb-[16px] w-full flex justify-center md:justify-start">
 						<Image
 							src="/images/ora/v2/logo-o-resgate-dos-relacionamentos.png"
@@ -106,14 +119,10 @@ export default function HeroSection({
 						max-w-[349px]
 						md:w-[521px]
 						md:max-w-none
-						text-left
+						text-center md:text-left
 					"
 					>
-						Você já tentou. Rodou protocolo, fez conversa difícil,
-						conhece o método.{" "}
-						<span className="font-bold italic">
-							Então por que o seu relacionamento não melhora?
-						</span>
+						{currentHeadline?.title}
 					</h1>
 
 					<p
@@ -128,20 +137,10 @@ export default function HeroSection({
 						max-w-[349px]
 						md:w-[521px]
 						md:max-w-none
-						text-left
+						text-center md:text-left
 					"
 					>
-						Nesse encontro ao vivo com os mentores da Aliança
-						Divergente, você vai finalmente enxergar o ponto cego
-						específico que está travando o seu relacionamento, e
-						que é diferente de tudo que você já trabalhou antes.
-						<br />
-						<br />
-						<span className="font-bold text-[#104448]">
-							Porque quando o problema persiste depois do método,
-							não é falta de esforço. É algo que você não consegue
-							ver sozinha. E esse encontro existe pra isso.
-						</span>
+						{currentHeadline?.text}
 					</p>
 
 					<div className="mt-[20px] w-full max-w-[350px] md:w-[521px] md:max-w-none">
