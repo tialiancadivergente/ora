@@ -62,8 +62,17 @@ export default function Footer() {
 					"
 				>
 					<p>
-						Política de privacidade&nbsp;&nbsp;|&nbsp;&nbsp;Termos de uso
+						<a
+							href="/politicas/politica-privacidade-alianca-divergente.pdf"
+							download="politica-privacidade.pdf"
+							className="hover:underline"
+						>
+							Política de privacidade
+						</a>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+						Termos de uso
 					</p>
+
 					<p className="mt-[4px]">
 						CNPJ nº 48.424.807/0001-88
 					</p>
