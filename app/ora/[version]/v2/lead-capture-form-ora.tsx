@@ -1,6 +1,5 @@
 "use client";
 
-import { Phone } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { Input } from "@/components/ui/input";
@@ -20,7 +19,7 @@ export interface LeadCaptureFormProps {
 	formName?: string;
 	className?: string;
 	emailInputClassName: string;
-	nameInputClassName: string;
+	nameInputClassName?: string;
 	ddiSelectClassName: string;
 	phoneInputClassName: string;
 	buttonClassName: string;
@@ -35,12 +34,11 @@ function formatPhoneByDdi(value: string, ddi: string): string {
 	const numericValue = value.replace(/\D/g, "");
 
 	if (ddi === "+55") {
-		if (numericValue.length <= 2) {
-			return numericValue;
-		}
+		if (numericValue.length <= 2) return numericValue;
 		if (numericValue.length <= 7) {
 			return `(${numericValue.slice(0, 2)}) ${numericValue.slice(2)}`;
 		}
+
 		return `(${numericValue.slice(0, 2)}) ${numericValue.slice(
 			2,
 			7
@@ -70,7 +68,6 @@ export function LeadCaptureForm({
 	formName,
 	className,
 	emailInputClassName,
-	nameInputClassName,
 	ddiSelectClassName,
 	phoneInputClassName,
 	buttonClassName,
@@ -89,7 +86,7 @@ export function LeadCaptureForm({
 	} = useForm<LeadCaptureFormValues>({
 		resolver: zodResolver(leadCaptureFormSchema),
 		defaultValues: {
-			name: "",
+			name: "Sem nome",
 			email: "",
 			ddi: "+55",
 			whatsapp: "",
@@ -104,6 +101,7 @@ export function LeadCaptureForm({
 	) => {
 		await onSubmit({
 			...values,
+			name: values.name || "Sem nome",
 			normalizedPhone: normalizePhone(values),
 		});
 	};
@@ -115,68 +113,51 @@ export function LeadCaptureForm({
 			className={cn("w-full", className)}
 			onSubmit={handleSubmit(submitHandler)}
 		>
-			<div className="w-full md:w-[521px] flex flex-col md:flex-row gap-[12px] md:gap-[24px]">
-				<div className="w-full md:w-[248.5px] shrink-0">
-					<Input
-						id="form-field-name"
-						placeholder="Seu nome"
-						className={nameInputClassName}
+			<div className="relative w-full md:w-[521px]">
+				<div className="flex w-full h-[52px] border-b-[1.5px] border-[#C0964B] bg-[#FFFFFF]">
+					<select
+						className={ddiSelectClassName}
 						style={{ fontFamily: "Arial, sans-serif" }}
-						{...register("name")}
+						{...register("ddi")}
+					>
+						{PHONE_DDI_OPTIONS.map((option) => (
+							<option key={option.value} value={option.value}>
+								{option.label}
+							</option>
+						))}
+					</select>
+
+					<Input
+						type="tel"
+						placeholder="Seu WhatsApp"
+						id="form-field-telefone"
+						className={phoneInputClassName}
+						style={{ fontFamily: "Arial, sans-serif" }}
+						{...register("whatsapp", {
+							onChange: (event) => {
+								const formatted = formatPhoneByDdi(
+									event.target.value,
+									ddi
+								);
+								setValue("whatsapp", formatted, {
+									shouldValidate: true,
+								});
+							},
+						})}
 					/>
-					{errors.name ? (
-						<p className="mt-1 text-sm !text-red-300">
-							{errors.name.message}
-						</p>
-					) : null}
 				</div>
 
-				<div className="relative w-full md:w-[248.5px] shrink-0">
+				{errors.ddi ? (
+					<p className="mt-1 text-sm !text-red-300">
+						{errors.ddi.message}
+					</p>
+				) : null}
 
-					<div className="flex w-full md:w-[248.5px] h-[52px] border-b-[1.5px] border-[#C0964B] bg-[#FFFFFF]">
-						<select
-							className={ddiSelectClassName}
-							style={{ fontFamily: "Arial, sans-serif" }}
-							{...register("ddi")}
-						>
-							{PHONE_DDI_OPTIONS.map((option) => (
-								<option key={option.value} value={option.value}>
-									{option.label}
-								</option>
-							))}
-						</select>
-
-						<Input
-							type="tel"
-							placeholder="Seu WhatsApp"
-							id="form-field-telefone"
-							className={phoneInputClassName}
-							style={{ fontFamily: "Arial, sans-serif" }}
-							{...register("whatsapp", {
-								onChange: (event) => {
-									const formatted = formatPhoneByDdi(
-										event.target.value,
-										ddi
-									);
-									setValue("whatsapp", formatted, {
-										shouldValidate: true,
-									});
-								},
-							})}
-						/>
-					</div>
-
-					{errors.ddi ? (
-						<p className="mt-1 text-sm !text-red-300">
-							{errors.ddi.message}
-						</p>
-					) : null}
-					{errors.whatsapp ? (
-						<p className="mt-1 text-sm !text-red-300">
-							{errors.whatsapp.message}
-						</p>
-					) : null}
-				</div>
+				{errors.whatsapp ? (
+					<p className="mt-1 text-sm !text-red-300">
+						{errors.whatsapp.message}
+					</p>
+				) : null}
 			</div>
 
 			<div className="mt-[12px] w-full md:w-[521px]">
@@ -187,6 +168,7 @@ export function LeadCaptureForm({
 					style={{ fontFamily: "Arial, sans-serif" }}
 					{...register("email")}
 				/>
+
 				{errors.email ? (
 					<p className="mt-1 text-sm !text-red-300">
 						{errors.email.message}

@@ -12,25 +12,18 @@ export default function Footer() {
 					flex-col
 					items-center
 					justify-center
-					gap-[16px]
+					gap-[20px]
 					px-[20px]
 					py-[32px]
 
 					md:flex-row
 					md:justify-center
-					md:gap-[32px]
+					md:items-center
+					md:gap-[40px]
 					md:px-[40px]
-					md:py-[28px]
 				"
 			>
-				<Image
-					src="/images/ora/v2/Logo.png"
-					alt="Aliança Divergente"
-					width={220}
-					height={32}
-					className="w-[190px] md:w-[220px] h-auto object-contain"
-				/>
-
+				{/* ESQUERDA */}
 				<p
 					className="
 						font-[Spectral]
@@ -38,12 +31,43 @@ export default function Footer() {
 						text-[13px]
 						md:text-[15px]
 						leading-[120%]
-						text-center
+						text-center md:text-left
 						text-white
 					"
 				>
 					Copyright © 2026. Todos os direitos reservados.
 				</p>
+
+				{/* CENTRO */}
+				<div className="flex justify-center">
+					<Image
+						src="/images/ora/v2/Logo.png"
+						alt="Aliança Divergente"
+						width={220}
+						height={32}
+						className="w-[190px] md:w-[220px] h-auto object-contain"
+					/>
+				</div>
+
+				{/* DIREITA */}
+				<div
+					className="
+						font-[Spectral]
+						font-normal
+						text-[13px]
+						md:text-[15px]
+						leading-[140%]
+						text-center md:text-right
+						text-white
+					"
+				>
+					<p>
+						Política de privacidade&nbsp;&nbsp;|&nbsp;&nbsp;Termos de uso
+					</p>
+					<p className="mt-[4px]">
+						CNPJ nº 48.424.807/0001-88
+					</p>
+				</div>
 			</div>
 		</footer>
 	);
