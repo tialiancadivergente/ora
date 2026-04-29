@@ -63,14 +63,20 @@ export default function Footer() {
 				>
 					<p>
 						<a
-							href="/politicas/politica-privacidade-alianca-divergente.pdf"
-							download="politica-privacidade.pdf"
+							href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
+							target="_blank"
+							rel="noopener noreferrer"
 							className="hover:underline"
 						>
 							Política de privacidade
 						</a>
 						&nbsp;&nbsp;|&nbsp;&nbsp;
-						Termos de uso
+						<a
+							href="#"
+							className="hover:underline"
+						>
+							Termos de uso
+						</a>
 					</p>
 
 					<p className="mt-[4px]">

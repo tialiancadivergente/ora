@@ -47,12 +47,56 @@ export default function Footer() {
             font-normal
             text-[14px]
             md:text-[16px]
-            leading-[100%]
+            leading-[120%]
             text-center
             text-white
           "
         >
-          2026 Aliança Divergente © Todos os Direitos Reservados.
+          © 2026 Aliança Divergente — Todos os Direitos Reservados.
+        </p>
+
+        {/* CNPJ */}
+        <p
+          className="
+            font-raleway
+            font-normal
+            text-[14px]
+            md:text-[16px]
+            leading-[120%]
+            text-center
+            text-white
+          "
+        >
+          CNPJ nº 48.424.807/0001-88
+        </p>
+
+        {/* LINKS */}
+        <p
+          className="
+            font-raleway
+            font-normal
+            text-[14px]
+            md:text-[16px]
+            leading-[120%]
+            text-center
+            text-white
+          "
+        >
+          <a
+            href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Política de privacidade
+          </a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a
+            href="#"
+            className="hover:underline"
+          >
+            Termos de uso
+          </a>
         </p>
 
       </div>

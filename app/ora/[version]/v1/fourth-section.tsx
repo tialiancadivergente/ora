@@ -61,20 +61,7 @@ export default function FourthSection() {
 					</span>
 				</h2>
 
-				<div
-					className="
-						mt-3
-						text-center
-						text-[#003036]
-						font-[Mulish]
-						text-[14px]
-						leading-[140%]
-						font-normal
-						md:mt-8
-						md:text-[14px]
-						md:leading-[145%]
-					"
-				>
+				<div className="mt-3 text-center text-[#003036] font-[Mulish] text-[14px] leading-[140%] md:mt-8 md:leading-[145%]">
 					<p>
 						E tenha a certeza de um futuro melhor com a nova Aliança
 						Divergente 2.0
@@ -86,179 +73,90 @@ export default function FourthSection() {
 						romper o teto financeiro.
 					</p>
 
-					<p className="mt-3 md:mt-6 font-bold">Nesse encontro você vai:</p>
+					<p className="mt-3 md:mt-6 font-bold">
+						Nesse encontro você vai:
+					</p>
 				</div>
 
 				<div className="mt-4 md:mt-8 space-y-2 md:space-y-3">
-					<div
-						className="
-							w-full
-							bg-[#B7A36D]
-							px-4
-							py-3
-							min-h-[60px]
-							flex
-							items-center
-							md:min-h-[77px]
-							md:px-[14px]
-							md:py-[10px]
-						"
-					>
-						<p
-							className="
-								text-[#003036]
-								font-[Mulish]
-								text-[13px]
-								leading-[130%]
-								font-bold
-								md:text-[14px]
-								md:leading-[145%]
-							"
-						>
-							Entender o que faz o teto financeiro se manter e parar de
-							repetir o mesmo ciclo.
+					<div className="w-full bg-[#B7A36D] px-4 py-3 min-h-[60px] flex items-center md:min-h-[77px] md:px-[14px] md:py-[10px]">
+						<p className="text-[#003036] font-[Mulish] text-[13px] font-bold md:text-[14px]">
+							Entender o que faz o teto financeiro se manter e parar de repetir o mesmo ciclo.
 						</p>
 					</div>
 
-					<div
-						className="
-							w-full
-							bg-[#B7A36D]
-							px-4
-							py-3
-							min-h-[60px]
-							flex
-							items-center
-							md:min-h-[63px]
-							md:px-[14px]
-							md:py-[10px]
-						"
-					>
-						<p
-							className="
-								text-[#003036]
-								font-[Mulish]
-								text-[13px]
-								leading-[130%]
-								font-bold
-								md:text-[14px]
-								md:leading-[145%]
-							"
-						>
-							Identificar o padrão que opera no seu financeiro sem você
-							perceber.
+					<div className="w-full bg-[#B7A36D] px-4 py-3 min-h-[60px] flex items-center md:min-h-[63px] md:px-[14px] md:py-[10px]">
+						<p className="text-[#003036] font-[Mulish] text-[13px] font-bold md:text-[14px]">
+							Identificar o padrão que opera no seu financeiro sem você perceber.
 						</p>
 					</div>
 
-					<div
-						className="
-							w-full
-							bg-[#B7A36D]
-							px-4
-							py-3
-							min-h-[142px]
-							flex
-							items-start
-							md:min-h-[93px]
-							md:px-[14px]
-							md:py-[10px]
-						"
-					>
-						<div
-							className="
-								text-[#003036]
-								font-[Mulish]
-								text-[13px]
-								leading-[130%]
-								md:text-[14px]
-								md:leading-[145%]
-							"
-						>
+					<div className="w-full bg-[#B7A36D] px-4 py-3 min-h-[142px] flex items-start md:min-h-[93px] md:px-[14px] md:py-[10px]">
+						<div className="text-[#003036] font-[Mulish] text-[13px] md:text-[14px]">
 							<p className="font-bold">
-								Conhecer a nova Aliança 2.0 e como ela foi pensada para te
-								levar ao seu próximo nível, te dando:
+								Conhecer a nova Aliança 2.0 e como ela foi pensada para te levar ao seu próximo nível, te dando:
 							</p>
 
-							<div className="mt-3 md:mt-3">
+							<div className="mt-3">
 								<p>
-									Dinheiro sobrando na conta todo mês. Independência
-									financeira de verdade. Quitação das dívidas que arrastam.
-									Estabilidade pra planejar o futuro com tranquilidade.
+									Dinheiro sobrando na conta todo mês. Independência financeira de verdade. Quitação das dívidas que arrastam. Estabilidade pra planejar o futuro com tranquilidade.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div className="mt-4 md:mt-[20px] w-full">
 					<button
 						onClick={() => handleScroll()}
 						className="
-			w-full
-			h-[54px]
-			md:h-[58px]
-			rounded-[8px]
-			border
-			px-[24px]
-			py-[14px]
-			flex
-			items-center
-			justify-center
-			gap-[10px]
-
-			font-[Mulish]
-			text-[12px]
-			md:text-[14px]
-			md:mt-8
-			leading-[145%]
-			font-extrabold
-			uppercase
-
-			text-[#07210F]
-			bg-[radial-gradient(50%_142.16%_at_50%_50%,#2DF289_0%,#00873F_100%)]
-
-			shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638]
-
-			border-[#1E8B4C]
-
-			transition duration-300
-			hover:bg-[radial-gradient(50%_142.16%_at_50%_50%,#49FFC1_0%,#00B454_100%)]
-			hover:shadow-[0px_8px_16px_#0B7D4680,0px_32px_32px_#0B7D4660,0px_61px_40px_#0B7D4640]
-			hover:scale-[1.025]
-		"
+							w-full h-[54px] md:h-[58px] rounded-[8px] border
+							px-[24px] py-[14px] flex items-center justify-center
+							font-[Mulish] text-[12px] md:text-[14px]
+							font-extrabold uppercase text-[#07210F]
+							bg-[radial-gradient(#2DF289,#00873F)]
+							border-[#1E8B4C]
+						"
 					>
 						QUERO ROMPER MEU TETO FINANCEIRO
 					</button>
 				</div>
 			</div>
 
-
-			{/* BLOCO DO RODAPÉ CONTROLADO SEPARADAMENTE NO MOBILE */}
-
-			<div className="mt-[260px] md:mt-56 mb-4 md:mb-0 md:translate-y-[60px] flex flex-col items-center justify-center gap-14 md:gap-4">
+			<div className="mt-[260px] md:mt-56 flex flex-col items-center gap-4">
 				<Image
 					src="/images/ora/v1/logo_roda_pe.png"
 					alt="Logo"
 					width={160}
 					height={70}
-					className="object-contain w-[140px] md:w-[160px] h-auto"
+					className="w-[140px] md:w-[160px]"
 				/>
 
-				<p
-					className="
-							text-center
-							text-white
-							font-normal
-							text-[14px]
-							md:text-[16px]
-							md:mt-4
-							font-spectral
-						"
-				>
-					© 2026 Aliança Divergente
-					<span className="hidden md:inline"> — </span>
-					<span className="block md:inline">Todos os Direitos Reservados</span>
+				<p className="text-white text-[14px] md:text-[16px] mb-4 md:mb-6 text-center">
+					© 2026 Aliança Divergente — Todos os Direitos Reservados
 				</p>
+
+				<div className="flex flex-col items-center gap-1">
+					<p className="text-white text-[14px] md:text-[16px] text-center leading-tight">
+						CNPJ nº 48.424.807/0001-88
+					</p>
+
+					<p className="text-white text-[14px] md:text-[16px] text-center leading-tight">
+						<a
+							href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline"
+						>
+							Política de privacidade
+						</a>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="#" className="hover:underline">
+							Termos de uso
+						</a>
+					</p>
+				</div>
 			</div>
-		</section >
+		</section>
 	);
 }
