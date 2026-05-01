@@ -81,6 +81,7 @@ export default function SecondSection() {
 					>
 						{subdomain === "gg" ? (
 							<>
+								{/* GG INTACTA */}
 								<p>
 									Você já provou que tem capacidade. Já trabalhou duro. Já se sacrificou.
 									Já teve meses bons. Já achou que tinha pegado o jeito.
@@ -126,31 +127,39 @@ export default function SecondSection() {
 									É um acesso exclusivo a uma nova forma de olhar para sua vida financeira,
 									com o suporte dos mentores da Aliança Divergente. 
 								</p>
-
 							</>
 						) : (
 							<>
 								<p>
 									Você já provou que tem capacidade. Já trabalhou duro. Já fez sacrifício.
-									Já teve meses bons. Já achou que tinha pegado o jeito.
+									Já teve meses bons.{" "}
+									<span className="italic">
+										Já achou que tinha pegado o jeito.
+									</span>
 								</p>
 
 								<p>
 									Mas o dinheiro continua sumindo.
 								</p>
 
-								<p>
+								<p className="italic">
 									A conta zera. A dívida volta. E a estabilidade que parecia perto vai embora de novo.
 								</p>
 
 								<p>
-									E esse ciclo <span className="text-[#E0D0A6]">não é falta de esforço.</span> Não é falta de disciplina.
+									E esse ciclo{" "}
+									<span className="text-[#E0D0A6] font-extrabold">
+										não é falta de esforço.
+									</span>{" "}
+									Não é falta de disciplina.
 									Não é porque você não sabe lidar com dinheiro.
 								</p>
 
 								<p>
-									<span className="text-[#E0D0A6]">É porque existe um padrão operando no seu financeiro que você não
-									consegue ver sozinho.</span>
+									<span className="text-[#E0D0A6] font-extrabold">
+										É porque existe um padrão operando no seu financeiro que você não
+										consegue ver sozinho.
+									</span>
 								</p>
 
 								<p>
@@ -160,8 +169,10 @@ export default function SecondSection() {
 								</p>
 
 								<p>
-									E este encontro foi pensado para que você consiga <span className="text-[#E0D0A6]"> identificar qual
-									é o SEU padrão.</span>
+									E este encontro foi pensado para que você consiga{" "}
+									<span className="text-[#E0D0A6] font-extrabold">
+										identificar qual é o SEU padrão.
+									</span>
 								</p>
 
 								<p>
@@ -174,12 +185,17 @@ export default function SecondSection() {
 								</p>
 
 								<p>
-									Entender por que ele se ativa exatamente quando você está prestes a estabilizar.
+									Entender por que ele se ativa{" "}
+									<span className="italic">
+										exatamente quando você está prestes a estabilizar.
+									</span>
 								</p>
 
 								<p>
-									E decidir se você quer continuar nesse ciclo... <span className="text-[#E0D0A6]">ou se você está
-									pronto para romper e ter a certeza de um futuro melhor.</span>
+									E decidir se você quer continuar nesse ciclo...{" "}
+									<span className="text-[#E0D0A6] font-extrabold">
+										ou se você está pronto para romper e ter a certeza de um futuro melhor.
+									</span>
 								</p>
 
 								<p>
