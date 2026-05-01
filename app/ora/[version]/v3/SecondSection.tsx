@@ -110,13 +110,16 @@ export default function SecondSection() {
 								</p>
 
 								<p>
-									<span className="text-[#E0D0A6]">
+									<span className="text-[#E0D0A6] font-extrabold block mb-2">
 										E este encontro foi pensado para te ajudar a:
-									</span>{" "}
-									Identificar qual é o seu padrão
-									Entender como ele impacta suas decisões
-									Perceber em que momentos ele se ativa
-									E avaliar, com mais clareza, os próximos passos
+									</span>
+
+									<ul className="list-disc pl-5 space-y-1">
+										<li>Identificar qual é o seu padrão</li>
+										<li>Entender como ele impacta suas decisões</li>
+										<li>Perceber em que momentos ele se ativa</li>
+										<li>E avaliar, com mais clareza, os próximos passos</li>
+									</ul>
 								</p>
 
 								<p>
