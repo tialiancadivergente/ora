@@ -25,6 +25,23 @@ export default function ThirdSection() {
 			"
 		>
 			<div className="w-full max-w-[980px] flex flex-col items-center">
+
+				{/* TÍTULO ADICIONADO */}
+				<h2
+					className="
+						font-[Spectral]
+						font-bold
+						text-[28px]
+						leading-[125%]
+						text-center
+						uppercase
+						text-[#E0D0A6]
+						mb-8
+					"
+				>
+					ESSE ENCONTRO COM ELTON EULER
+				</h2>
+
 				<div
 					className="
 						relative
