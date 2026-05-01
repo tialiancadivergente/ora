@@ -236,7 +236,8 @@ export default function ThirdSection() {
 							text-[#071117]
 							font-[Mulish]
 							font-extrabold
-							text-[14px]
+							text-[16px]
+							leading-[145%]
 							uppercase
 							flex
 							items-center
@@ -247,7 +248,7 @@ export default function ThirdSection() {
 							hover:scale-[1.025]
 						"
 					>
-						QUERO ROMPER MEU TETO FINANCEIRO
+						QUERO PARTICIPAR DO ENCONTRO COM ELTON
 					</button>
 				</div>
 			</div>
