@@ -28,3 +28,11 @@ export function getOraHeadlineVariantByHostname(
 
   return SUBDOMAIN_TO_HEADLINE_VARIANT[subdomain] ?? "default";
 }
+
+export function getOraActiveHeadlineVariant(): OraHeadlineVariant {
+  if (typeof window === "undefined") {
+    return "default";
+  }
+
+  return getOraHeadlineVariantByHostname(window.location.hostname);
+}

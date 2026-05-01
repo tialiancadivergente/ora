@@ -1,8 +1,10 @@
 "use client";
 
+import { getOraActiveHeadlineVariant } from "@/lib/config/ora-subdomain-headline-config";
 import { handleScroll } from "@/lib/utils";
 
 export default function SecondSection() {
+	const subdomain = getOraActiveHeadlineVariant();
 	return (
 		<section
 			className={`
@@ -57,8 +59,15 @@ export default function SecondSection() {
 							mb-6
 						"
 					>
-						EXISTE UM TETO FINANCEIRO OPERANDO NO SEU DINHEIRO.
-						E VOCÊ JÁ SENTE ISSO.
+						{subdomain === "gg" ? (
+							<>
+								POR QUE PARECE DIFÍCIL MANTER CONSISTÊNCIA FINANCEIRA?
+							</>
+						) : (
+							<>
+								POR QUE O DINHEIRO ATÉ ENTRA, MAS NÃO FICA?
+							</>
+						)}
 					</h2>
 
 					<div
@@ -70,65 +79,132 @@ export default function SecondSection() {
 							space-y-4
 						"
 					>
-						<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
+						{subdomain === "gg" ? (
+							<>
+								<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
 
-						<p>
-							Tem meses que o dinheiro até entra bem. Mas não fica.
-							A conta zera. A dívida volta. E aquela sensação de que
-							você está sempre correndo atrás, nunca na frente,
-							não vai embora.
-						</p>
+								<p>
+									Tem meses que o dinheiro até entra bem. Mas não fica.
+									A conta zera. A dívida volta. E aquela sensação de que
+									você está sempre correndo atrás, nunca na frente,
+									não vai embora.
+								</p>
 
-						<p>
-							E esse ciclo não é falta de esforço. Não é falta de
-							disciplina. Não é porque você não sabe lidar com
-							dinheiro.
-						</p>
+								<p>
+									E esse ciclo não é falta de esforço. Não é falta de
+									disciplina. Não é porque você não sabe lidar com
+									dinheiro.
+								</p>
 
-						<p>
-							<span className="text-[#E0D0A6]">
-								É um teto que opera por baixo do seu financeiro
-							</span>{" "}
-							que você não consegue ver sozinho.
-						</p>
+								<p>
+									<span className="text-[#E0D0A6]">
+										É um teto que opera por baixo do seu financeiro
+									</span>{" "}
+									que você não consegue ver sozinho.
+								</p>
 
-						<p>
-							Um teto que faz o dinheiro entrar, mas não ficar.
-							Que faz você ganhar mais, mas não sobrar mais.
-							Que faz você quitar uma dívida e criar outra
-							sem nem perceber.
-						</p>
+								<p>
+									Um teto que faz o dinheiro entrar, mas não ficar.
+									Que faz você ganhar mais, mas não sobrar mais.
+									Que faz você quitar uma dívida e criar outra
+									sem nem perceber.
+								</p>
 
-						<p>
-							Quem está dentro da Aliança hoje já entendeu isso.
-							Não é o método que muda o financeiro,
-							é romper esse teto que muda tudo.
-						</p>
+								<p>
+									Quem está dentro da Aliança hoje já entendeu isso.
+									Não é o método que muda o financeiro,
+									é romper esse teto que muda tudo.
+								</p>
 
-						<p>
-							E este encontro foi pensado para você finalmente
-							ver esse teto.
-						</p>
+								<p>
+									E este encontro foi pensado para você finalmente
+									ver esse teto.
+								</p>
 
-						<p>
-							Entender onde e como ele opera no seu financeiro.
-						</p>
+								<p>
+									Entender onde e como ele opera no seu financeiro.
+								</p>
 
-						<p>
-							Descobrir por que ele se ativa exatamente quando
-							você está prestes a romper e entrar em uma nova fase.
-						</p>
+								<p>
+									Descobrir por que ele se ativa exatamente quando
+									você está prestes a romper e entrar em uma nova fase.
+								</p>
 
-						<p>
-							E decidir: você continua preso nesse teto...
-							ou você está pronto para romper e entrar no
-							seu próximo nível?
-						</p>
+								<p>
+									E decidir: você continua preso nesse teto...
+									ou você está pronto para romper e entrar no
+									seu próximo nível?
+								</p>
 
-						<p className="font-bold text-[#E0D0A6]">
-							É a sua chance de ter acesso único, exclusivo
-							e gratuito aos mentores da Aliança Divergente.
-						</p>
+								<p className="font-bold text-[#E0D0A6]">
+									É a sua chance de ter acesso único, exclusivo
+									e gratuito aos mentores da Aliança Divergente.
+								</p>
+							</>
+						) : (
+							<>
+								<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
+
+								<p>
+									Tem meses que o dinheiro até entra bem. Mas não fica.
+									A conta zera. A dívida volta. E aquela sensação de que
+									você está sempre correndo atrás, nunca na frente,
+									não vai embora.
+								</p>
+
+								<p>
+									E esse ciclo não é falta de esforço. Não é falta de
+									disciplina. Não é porque você não sabe lidar com
+									dinheiro.
+								</p>
+
+								<p>
+									<span className="text-[#E0D0A6]">
+										É um teto que opera por baixo do seu financeiro
+									</span>{" "}
+									que você não consegue ver sozinho.
+								</p>
+
+								<p>
+									Um teto que faz o dinheiro entrar, mas não ficar.
+									Que faz você ganhar mais, mas não sobrar mais.
+									Que faz você quitar uma dívida e criar outra
+									sem nem perceber.
+								</p>
+
+								<p>
+									Quem está dentro da Aliança hoje já entendeu isso.
+									Não é o método que muda o financeiro,
+									é romper esse teto que muda tudo.
+								</p>
+
+								<p>
+									E este encontro foi pensado para você finalmente
+									ver esse teto.
+								</p>
+
+								<p>
+									Entender onde e como ele opera no seu financeiro.
+								</p>
+
+								<p>
+									Descobrir por que ele se ativa exatamente quando
+									você está prestes a romper e entrar em uma nova fase.
+								</p>
+
+								<p>
+									E decidir: você continua preso nesse teto...
+									ou você está pronto para romper e entrar no
+									seu próximo nível?
+								</p>
+
+								<p className="font-bold text-[#E0D0A6]">
+									É a sua chance de ter acesso único, exclusivo
+									e gratuito aos mentores da Aliança Divergente.
+								</p>
+							</>
+						)}
+
 					</div>
 
 					<div className="mt-[16px] md:mt-[32px] mb-8 md:mb-0">

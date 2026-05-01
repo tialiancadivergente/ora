@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import { type LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 import { LEAD_TRACK_CONFIG } from "@/lib/config/lead-track-config";
-import { getOraHeadlineVariantByHostname } from "@/lib/config/ora-subdomain-headline-config";
+import { getOraActiveHeadlineVariant } from "@/lib/config/ora-subdomain-headline-config";
 import {
   getTrackingCookies,
   getTrackingPageInfo,
@@ -26,9 +26,7 @@ import { Headline as GoogleHeadline } from "./headline-gg";
 export default function Formv3() {
   const params = useParams();
   const searchParams = useSearchParams();
-  const hostname =
-    typeof window !== "undefined" ? window.location.hostname : undefined;
-  const headlineVariant = getOraHeadlineVariantByHostname(hostname);
+  const headlineVariant = getOraActiveHeadlineVariant();
   const activeHeadline =
     headlineVariant === "gg" ? GoogleHeadline : DefaultHeadline;
   const [titleRedLine, setTitleRedLine] = useState<React.ReactNode | null>(
