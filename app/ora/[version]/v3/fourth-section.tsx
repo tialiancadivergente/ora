@@ -4,8 +4,11 @@ import React from "react";
 import Image from "next/image";
 import { handleScroll } from "@/lib/utils";
 import { CalendarDays, Smartphone } from "lucide-react";
+import { getOraActiveHeadlineVariant } from "@/lib/config/ora-subdomain-headline-config";
 
 export default function FourthSection() {
+	const subdomain = getOraActiveHeadlineVariant();
+
 	return (
 		<section
 			className="
@@ -74,27 +77,58 @@ export default function FourthSection() {
 				</div>
 
 				<div className="mt-4 md:mt-8 space-y-2 md:space-y-3">
-					<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
-						<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
-							<li>• Entender quais padrões impactam suas decisões financeiras</li>
-							<li>• Identificar comportamentos que se repetem sem você perceber</li>
-							<li>• Desenvolver mais clareza sobre sua organização financeira</li>
-							<li>• Conhecer a Aliança 2.0 e sua nova estrutura</li>
-						</ul>
-					</div>
 
-					<p className="text-center text-[#003036] font-[Mulish] font-bold text-[16px] leading-[145%]">
-						Com foco em:
-					</p>
+					{subdomain === "gg" ? (
+						<>
+							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
+								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<li>• Entender quais padrões impactam suas decisões financeiras</li>
+									<li>• Identificar comportamentos que se repetem sem você perceber</li>
+									<li>• Desenvolver mais clareza sobre sua organização financeira</li>
+									<li>• Conhecer a Aliança 2.0 e sua nova estrutura</li>
+								</ul>
+							</div>
 
-					<div className="w-full bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px] md:w-[544px]">
-						<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
-							<li>• Mais consciência nas decisões</li>
-							<li>• Mais consistência no dia a dia</li>
-							<li>• Mais organização financeira</li>
-							<li>• Mais tranquilidade para planejar o futuro</li>
-						</ul>
-					</div>
+							<p className="text-center text-[#003036] font-[Mulish] font-bold text-[16px] leading-[145%]">
+								Com foco em:
+							</p>
+
+							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
+								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<li>• Mais consciência nas decisões</li>
+									<li>• Mais consistência no dia a dia</li>
+									<li>• Mais organização financeira</li>
+									<li>• Mais tranquilidade para planejar o futuro</li>
+								</ul>
+							</div>
+						</>
+					) : (
+						<>
+							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] min-h-[51px]">
+								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<span className="font-bold">Entender o que faz o dinheiro não ficar</span> e parar de repetir o mesmo ciclo.
+								</p>
+							</div>
+
+							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] min-h-[51px]">
+								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<span className="font-bold">Identificar o padrão que opera no seu financeiro</span> sem você perceber.
+								</p>
+							</div>
+
+							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[159px]">
+								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<span className="font-bold">Conhecer a nova Aliança 2.0</span> e como ela foi pensada pra te dar:
+								</p>
+								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+									<li>* Dinheiro sobrando na conta todo mês.</li>
+									<li>* Independência financeira de verdade.</li>
+									<li>* Quitação das dívidas que arrastam.</li>
+									<li>* Estabilidade para planejar o futuro com tranquilidade.</li>
+								</ul>
+							</div>
+						</>
+					)}
 
 					<div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-[#003036] font-[Mulish] text-[14px] leading-[145%] font-medium">
 						<div className="flex items-center gap-2">
