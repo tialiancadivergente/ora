@@ -81,101 +81,84 @@ export default function SecondSection() {
 					>
 						{subdomain === "gg" ? (
 							<>
-								<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
-
 								<p>
-									Tem meses que o dinheiro até entra bem. Mas não fica.
-									A conta zera. A dívida volta. E aquela sensação de que
-									você está sempre correndo atrás, nunca na frente,
-									não vai embora.
+									Você já provou que tem capacidade. Já trabalhou duro. Já se sacrificou.
+									Já teve meses bons. Já achou que tinha pegado o jeito.
 								</p>
 
 								<p>
-									E esse ciclo não é falta de esforço. Não é falta de
-									disciplina. Não é porque você não sabe lidar com
-									dinheiro.
+									Mas, com o tempo, as coisas param de funcionar.
+								</p>
+
+								<p>
+									Você volta a uma situação financeira que achou que já tinha superado.
+									A estabilidade que parecia perto se perde novamente.
+								</p>
+
+								<p>
+									Isso não é, necessariamente, falta de esforço.
+								</p>
+
+								<p>
+									Muitas vezes, existe um padrão de comportamento que influencia diretamente
+									a forma como você lida com dinheiro — e que não é fácil de perceber sozinho.
+								</p>
+
+								<p>
+									Um padrão que interfere nas suas decisões, na sua constância e na forma como
+									você organiza sua vida financeira no dia a dia.
 								</p>
 
 								<p>
 									<span className="text-[#E0D0A6]">
-										É um teto que opera por baixo do seu financeiro
+										E este encontro foi pensado para te ajudar a:
 									</span>{" "}
-									que você não consegue ver sozinho.
+									Identificar qual é o seu padrão
+									Entender como ele impacta suas decisões
+									Perceber em que momentos ele se ativa
+									E avaliar, com mais clareza, os próximos passos
 								</p>
 
 								<p>
-									Um teto que faz o dinheiro entrar, mas não ficar.
-									Que faz você ganhar mais, mas não sobrar mais.
-									Que faz você quitar uma dívida e criar outra
-									sem nem perceber.
+									É um acesso exclusivo a uma nova forma de olhar para sua vida financeira,
+									com o suporte dos mentores da Aliança Divergente. 
 								</p>
 
-								<p>
-									Quem está dentro da Aliança hoje já entendeu isso.
-									Não é o método que muda o financeiro,
-									é romper esse teto que muda tudo.
-								</p>
-
-								<p>
-									E este encontro foi pensado para você finalmente
-									ver esse teto.
-								</p>
-
-								<p>
-									Entender onde e como ele opera no seu financeiro.
-								</p>
-
-								<p>
-									Descobrir por que ele se ativa exatamente quando
-									você está prestes a romper e entrar em uma nova fase.
-								</p>
-
-								<p>
-									E decidir: você continua preso nesse teto...
-									ou você está pronto para romper e entrar no
-									seu próximo nível?
-								</p>
-
-								<p className="font-bold text-[#E0D0A6]">
-									É a sua chance de ter acesso único, exclusivo
-									e gratuito aos mentores da Aliança Divergente.
-								</p>
 							</>
 						) : (
 							<>
-								<p>Você acorda, trabalha, paga conta, dorme. Repete.</p>
-
 								<p>
-									Tem meses que o dinheiro até entra bem. Mas não fica.
-									A conta zera. A dívida volta. E aquela sensação de que
-									você está sempre correndo atrás, nunca na frente,
-									não vai embora.
+									Você já provou que tem capacidade. Já trabalhou duro. Já fez sacrifício.
+									Já teve meses bons. Já achou que tinha pegado o jeito.
 								</p>
 
 								<p>
-									E esse ciclo não é falta de esforço. Não é falta de
-									disciplina. Não é porque você não sabe lidar com
-									dinheiro.
+									Mas o dinheiro continua sumindo.
 								</p>
 
 								<p>
-									<span className="text-[#E0D0A6]">
-										É um teto que opera por baixo do seu financeiro
-									</span>{" "}
-									que você não consegue ver sozinho.
+									A conta zera. A dívida volta. E a estabilidade que parecia perto vai embora de novo.
 								</p>
 
 								<p>
-									Um teto que faz o dinheiro entrar, mas não ficar.
-									Que faz você ganhar mais, mas não sobrar mais.
-									Que faz você quitar uma dívida e criar outra
-									sem nem perceber.
+									E esse ciclo <span className="text-[#E0D0A6]">não é falta de esforço.</span> Não é falta de disciplina.
+									Não é porque você não sabe lidar com dinheiro.
 								</p>
 
 								<p>
-									Quem está dentro da Aliança hoje já entendeu isso.
-									Não é o método que muda o financeiro,
-									é romper esse teto que muda tudo.
+									<span className="text-[#E0D0A6]">É porque existe um padrão operando no seu financeiro que você não
+									consegue ver sozinho.</span>
+								</p>
+
+								<p>
+									Um padrão que faz o dinheiro entrar, mas não ficar. Que faz você
+									ganhar mais, mas não sobrar mais. Que faz você quitar uma dívida e
+									criar outra sem nem perceber.
+								</p>
+
+								<p>
+									E este encontro foi pensado para que você consiga <span className="text-[#E0D0A6]"> identificar qual
+									é o SEU padrão.</span>
 								</p>
 
 								<p>
@@ -184,23 +167,20 @@ export default function SecondSection() {
 								</p>
 
 								<p>
-									Entender onde e como ele opera no seu financeiro.
+									Ver onde e como ele opera no seu financeiro.
 								</p>
 
 								<p>
-									Descobrir por que ele se ativa exatamente quando
-									você está prestes a romper e entrar em uma nova fase.
+									Entender por que ele se ativa exatamente quando você está prestes a estabilizar.
 								</p>
 
 								<p>
-									E decidir: você continua preso nesse teto...
-									ou você está pronto para romper e entrar no
-									seu próximo nível?
+									E decidir se você quer continuar nesse ciclo... <span className="text-[#E0D0A6]">ou se você está
+									pronto para romper e ter a certeza de um futuro melhor.</span>
 								</p>
 
-								<p className="font-bold text-[#E0D0A6]">
-									É a sua chance de ter acesso único, exclusivo
-									e gratuito aos mentores da Aliança Divergente.
+								<p>
+									É a sua chance de ter acesso único, exclusivo e gratuito aos mentores da Aliança Divergente.
 								</p>
 							</>
 						)}
