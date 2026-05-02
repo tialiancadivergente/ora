@@ -206,12 +206,11 @@ export default function SecondSection() {
 
 					</div>
 
-					<div className="mt-[16px] md:mt-[32px] mb-8 md:mb-0">
+					<div className="mt-[16px] md:mt-[32px] mb-8 md:mb-0 w-full">
 						<button
 							onClick={handleScroll}
 							className="
 							w-full
-							md:w-[513px]
 							h-[58px]
 							rounded-[8px]
 							border
@@ -226,6 +225,9 @@ export default function SecondSection() {
 							flex
 							items-center
 							justify-center
+							px-4
+							text-center
+							break-words
 							shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638,0px_90px_36px_#0B7D4612,0px_140px_39px_#0B7D4603]
 							hover:bg-[radial-gradient(50%_142.16%_at_50%_50%,#49FFC1_0%,#00B454_100%)]
 							hover:shadow-[0px_8px_16px_#0B7D4680,0px_32px_32px_#0B7D4660,0px_61px_40px_#0B7D4640]

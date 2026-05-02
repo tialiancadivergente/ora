@@ -43,12 +43,12 @@ export default function HeroSection({
 				bg-center
 				bg-no-repeat
 				px-4
-				pt-5
+				pt-0 md:pt-0
 				pb-6
 				md:p-0
 			`}
 		>
-			<div className="relative w-full h-14 bg-[#930000] overflow-hidden flex items-center">
+			<div className="relative w-screen h-8 md:h-14 bg-[#930000] overflow-hidden flex items-center left-1/2 -translate-x-1/2">
 				<div className="marquee-track flex whitespace-nowrap">
 					<div className="flex whitespace-nowrap">
 						{Array.from({ length: 8 }).map((_, index) => (
@@ -74,7 +74,7 @@ export default function HeroSection({
 				</div>
 			</div>
 
-			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-[-10px] md:mt-[20px] md:ml-[210px] mx-auto md:mx-0">
+			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-[18px] md:mt-[20px] md:ml-[210px] mx-auto md:mx-0">
 				<div className="mb-[16px] w-full flex justify-start">
 					<Image
 						src="/images/ora/v3/logo-rodape.png"

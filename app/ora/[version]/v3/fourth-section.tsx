@@ -37,7 +37,7 @@ export default function FourthSection() {
 					flex	
 					flex-col
 					w-full
-					md:mx-auto
+					mx-auto
 					max-w-[349px]
 					md:max-w-[512px]
 					px-4
