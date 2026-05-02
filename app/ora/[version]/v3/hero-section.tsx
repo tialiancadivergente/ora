@@ -23,7 +23,7 @@ export default function HeroSection({
 	submitError,
 }: ContainerProps) {
 	const marqueeLine =
-		"11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS • 11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS •";
+		"11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS •";
 
 	return (
 		<section
@@ -49,18 +49,32 @@ export default function HeroSection({
 			`}
 		>
 			<div className="relative w-full h-14 bg-[#930000] overflow-hidden flex items-center">
-				<span className="absolute whitespace-nowrap font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] marquee-item">
-					{marqueeLine}
-				</span>
-				<span
-					aria-hidden="true"
-					className="absolute whitespace-nowrap font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] marquee-item marquee-item-delay"
-				>
-					{marqueeLine}
-				</span>
+				<div className="marquee-track flex whitespace-nowrap">
+					<div className="flex whitespace-nowrap">
+						{Array.from({ length: 8 }).map((_, index) => (
+							<span
+								key={`marquee-a-${index}`}
+								className="font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] px-3"
+							>
+								{marqueeLine}
+							</span>
+						))}
+					</div>
+
+					<div className="flex whitespace-nowrap" aria-hidden="true">
+						{Array.from({ length: 8 }).map((_, index) => (
+							<span
+								key={`marquee-b-${index}`}
+								className="font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] px-3"
+							>
+								{marqueeLine}
+							</span>
+						))}
+					</div>
+				</div>
 			</div>
+
 			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-0 md:mt-[45px] md:ml-[210px] mx-auto md:mx-0">
-				
 				<div className="mb-[16px] w-full flex justify-start">
 					<Image
 						src="/images/ora/v3/logo-rodape.png"
@@ -116,23 +130,21 @@ export default function HeroSection({
 					/>
 				</div>
 			</div>
+
 			<style jsx>{`
 				@keyframes marquee-slide {
 					0% {
-						transform: translateX(100%);
+						transform: translateX(0);
 					}
 					100% {
-						transform: translateX(-100%);
+						transform: translateX(-50%);
 					}
 				}
 
-				.marquee-item {
-					animation: marquee-slide 18s linear infinite;
+				.marquee-track {
+					width: max-content;
+					animation: marquee-slide 24s linear infinite;
 					will-change: transform;
-				}
-
-				.marquee-item-delay {
-					animation-delay: -9s;
 				}
 			`}</style>
 		</section>

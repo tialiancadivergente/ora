@@ -44,7 +44,7 @@ const mulish = Mulish({
 })
 
 export const metadata: Metadata = {
-  title: "O Resgate dos Relacionamentos",
+  title: "Live Exclusiva com Elton Euler",
   description:
     "Faça seu diagnóstico de dependência emocional gratuito e descubra como aumentar seu nível de permissão.",
   icons: {

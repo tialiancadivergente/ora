@@ -6,9 +6,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "O Resgate dos Otimistas - Diagnostico de Dependencia Emocional",
+  title: "Live Exclusiva com Elton Euler",
   description:
-    "Faca seu diagnostico de dependencia emocional gratuito e descubra como aumentar seu nivel de permissao.",
+    "Nesse encontro ao vivo com Elton Euler, você vai entender por que isso acontece e como a Aliança 2.0 foi criada para te ajudar nisso.",
 };
 
 export default function QuizLayout({ children }: { children: ReactNode }) {
