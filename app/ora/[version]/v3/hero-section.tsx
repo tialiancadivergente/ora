@@ -74,7 +74,7 @@ export default function HeroSection({
 				</div>
 			</div>
 
-			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-0 md:mt-[45px] md:ml-[210px] mx-auto md:mx-0">
+			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-[-10px] md:mt-[20px] md:ml-[210px] mx-auto md:mx-0">
 				<div className="mb-[16px] w-full flex justify-start">
 					<Image
 						src="/images/ora/v3/logo-rodape.png"
