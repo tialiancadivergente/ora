@@ -26,7 +26,6 @@ export default function ThirdSection() {
 		>
 			<div className="w-full max-w-[980px] flex flex-col items-center">
 
-				{/* TÍTULO ADICIONADO */}
 				<h2
 					className="
 						font-[Spectral]
@@ -61,11 +60,7 @@ export default function ThirdSection() {
 						<div className="w-[56px] h-[3px] bg-[#D30000]" />
 
 						<h2 className="font-[Spectral] font-bold text-[24px] leading-[125%] uppercase text-[#E0D0A6]">
-							{subdomain === "gg" ? (
-								<>NÃO É PRA VOCÊ SE...</>
-							) : (
-								<>NÃO É PRA VOCÊ SE...</>
-							)}
+							NÃO É PRA VOCÊ SE...
 						</h2>
 
 						<div className="flex flex-col gap-4">
@@ -140,11 +135,7 @@ export default function ThirdSection() {
 						<div className="w-[56px] h-[3px] bg-[#30CC79]" />
 
 						<h2 className="font-[Spectral] font-bold text-[24px] leading-[125%] uppercase text-[#E0D0A6]">
-							{subdomain === "gg" ? (
-								<>É PRA VOCÊ SE...</>
-							) : (
-								<>É PRA VOCÊ SE...</>
-							)}
+							É PRA VOCÊ SE...
 						</h2>
 
 						<div className="flex flex-col gap-4">
@@ -185,7 +176,6 @@ export default function ThirdSection() {
 											Você quer construir uma relação mais equilibrada com dinheiro.
 										</p>
 									</div>
-
 								</>
 							) : (
 								<>
@@ -253,12 +243,16 @@ export default function ThirdSection() {
 							text-[#071117]
 							font-[Mulish]
 							font-extrabold
-							text-[16px]
+							text-[13px]
+							md:text-[16px]
 							leading-[145%]
 							uppercase
 							flex
 							items-center
 							justify-center
+							px-4
+							text-center
+							whitespace-nowrap
 							shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638,0px_90px_36px_#0B7D4612,0px_140px_39px_#0B7D4603]
 							hover:bg-[radial-gradient(50%_142.16%_at_50%_50%,#49FFC1_0%,#00B454_100%)]
 							hover:shadow-[0px_8px_16px_#0B7D4680,0px_32px_32px_#0B7D4660,0px_61px_40px_#0B7D4640]

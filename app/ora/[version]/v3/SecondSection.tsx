@@ -81,7 +81,6 @@ export default function SecondSection() {
 					>
 						{subdomain === "gg" ? (
 							<>
-								{/* GG INTACTA */}
 								<p>
 									Você já provou que tem capacidade. Já trabalhou duro. Já se sacrificou.
 									Já teve meses bons. Já achou que tinha pegado o jeito.
@@ -219,7 +218,8 @@ export default function SecondSection() {
 							text-[#071117]
 							font-[Mulish]
 							font-extrabold
-							text-[16px]
+							text-[13px]
+							md:text-[16px]
 							leading-[145%]
 							uppercase
 							flex
@@ -227,7 +227,7 @@ export default function SecondSection() {
 							justify-center
 							px-4
 							text-center
-							break-words
+							whitespace-nowrap
 							shadow-[0px_6px_12px_#0B7D466E,0px_22px_22px_#0B7D465E,0px_51px_30px_#0B7D4638,0px_90px_36px_#0B7D4612,0px_140px_39px_#0B7D4603]
 							hover:bg-[radial-gradient(50%_142.16%_at_50%_50%,#49FFC1_0%,#00B454_100%)]
 							hover:shadow-[0px_8px_16px_#0B7D4680,0px_32px_32px_#0B7D4660,0px_61px_40px_#0B7D4640]

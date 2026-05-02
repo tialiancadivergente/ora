@@ -77,7 +77,6 @@ export default function FourthSection() {
 				</div>
 
 				<div className="mt-4 md:mt-8 space-y-2 md:space-y-3">
-
 					{subdomain === "gg" ? (
 						<>
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
@@ -147,13 +146,29 @@ export default function FourthSection() {
 					<button
 						onClick={() => handleScroll()}
 						className="
-							w-full h-[54px] md:h-[58px] rounded-[8px] border
-							px-[24px] py-[14px] flex items-center justify-center
-							font-[Mulish] text-[16px]
-							font-extrabold uppercase text-[#07210F]
+							w-full
+							max-w-[413px]
+							h-[54px] md:h-[58px]
+							rounded-[8px]
+							border
+							px-[24px]
+							flex items-center justify-center
+							font-[Mulish]
+							text-[13px] md:text-[16px]
+							font-extrabold uppercase
+							text-[#07210F]
 							bg-[radial-gradient(#2DF289,#00873F)]
 							border-[#1E8B4C]
+							whitespace-nowrap
+							mx-auto
+							md:!mx-auto
 						"
+						style={{
+							width: "calc(100% + 32px)",
+							marginLeft: "-16px",
+							marginRight: "-16px",
+							maxWidth: "413px",
+						}}
 					>
 						QUERO PARTICIPAR DO ENCONTRO COM ELTON
 					</button>
