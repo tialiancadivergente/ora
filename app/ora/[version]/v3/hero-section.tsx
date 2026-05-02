@@ -22,10 +22,13 @@ export default function HeroSection({
 	onSubmit,
 	submitError,
 }: ContainerProps) {
+	const marqueeLine =
+		"11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS • 11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS •";
+
 	return (
 		<section
 			id="hero"
-			className="
+			className={`
 				relative
 				min-h-[1210px]
 				md:min-h-[900px]
@@ -43,8 +46,19 @@ export default function HeroSection({
 				pt-5
 				pb-6
 				md:p-0
-			"
+			`}
 		>
+			<div className="relative w-full h-14 bg-[#930000] overflow-hidden flex items-center">
+				<span className="absolute whitespace-nowrap font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] marquee-item">
+					{marqueeLine}
+				</span>
+				<span
+					aria-hidden="true"
+					className="absolute whitespace-nowrap font-mulish font-extrabold uppercase text-white text-[14px] tracking-[0.04em] marquee-item marquee-item-delay"
+				>
+					{marqueeLine}
+				</span>
+			</div>
 			<div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-start text-left mt-0 md:mt-[45px] md:ml-[210px] mx-auto md:mx-0">
 				
 				<div className="mb-[16px] w-full flex justify-start">
@@ -102,6 +116,25 @@ export default function HeroSection({
 					/>
 				</div>
 			</div>
+			<style jsx>{`
+				@keyframes marquee-slide {
+					0% {
+						transform: translateX(100%);
+					}
+					100% {
+						transform: translateX(-100%);
+					}
+				}
+
+				.marquee-item {
+					animation: marquee-slide 18s linear infinite;
+					will-change: transform;
+				}
+
+				.marquee-item-delay {
+					animation-delay: -9s;
+				}
+			`}</style>
 		</section>
 	);
 }
