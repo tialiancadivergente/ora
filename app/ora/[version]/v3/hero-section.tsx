@@ -7,6 +7,7 @@ import {
 	LeadCaptureForm,
 	LeadCaptureSubmitData,
 } from "@/app/components/form/lead-capture-form";
+import { getOraActiveHeadlineVariant } from "@/lib/config/ora-subdomain-headline-config";
 
 interface ContainerProps {
 	titleRedLine: React.ReactNode | null;
@@ -22,6 +23,8 @@ export default function HeroSection({
 	onSubmit,
 	submitError,
 }: ContainerProps) {
+	const subdomain = getOraActiveHeadlineVariant();
+
 	const marqueeLine =
 		"11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS •";
 
@@ -103,9 +106,19 @@ export default function HeroSection({
 
 				<div className="mt-[16px] w-full md:w-[527px] border-l-[2px] border-[#C0964B] bg-[#FFFFFF0A] backdrop-blur-[13.5px] px-[20px] md:px-[24px] py-[8px]">
 					<p className="font-spectral font-semibold text-[#E0D0A6] text-[16px] md:text-[20px]">
-						Você já foi aliado. Já conhece o método. Já tentou.
-						Mas o dinheiro ainda não está sobrando. E você sabe
-						que não é por falta de esforço.
+						{subdomain === "gg" ? (
+							<>
+								Você já foi aliado. Já conhece o método.
+								Mas ainda não conseguiu estabilizar a sua
+								vida financeira como gostaria.
+							</>
+						) : (
+							<>
+								Você já foi aliado. Já conhece o método. Já tentou.
+								Mas o dinheiro ainda não está sobrando. E você sabe
+								que não é por falta de esforço.
+							</>
+						)}
 					</p>
 				</div>
 
