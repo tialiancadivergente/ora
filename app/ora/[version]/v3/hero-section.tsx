@@ -140,7 +140,7 @@ export default function HeroSection({
 						emailInputClassName="w-full h-[52px] md:h-[56px] px-[16px] rounded-[8px] border border-[#6F6F6F] bg-[#0404040A] backdrop-blur-[20px] text-white placeholder:text-white font-mulish text-[16px]"
 						ddiSelectClassName="h-[52px] md:h-[56px] py-4 pl-[40px] pr-[28px] bg-[#FFFFFF1A] rounded-l-[8px] border border-[#6F6F6F] text-white font-mulish text-[16px]"
 						phoneInputClassName="w-full h-[52px] md:h-[56px] px-[16px] py-4 rounded-r-[8px] bg-[#0404040A] backdrop-blur-[20px] text-white placeholder:text-white font-mulish text-[16px] border border-[#6F6F6F]"
-						buttonClassName="mt-[12px] mb-[12px] w-full h-[52px] md:h-[56px] rounded-[8px] font-mulish font-extrabold text-[16px] leading-[145%] uppercase text-black [background:radial-gradient(50%_142.16%_at_50%_50%,_#2DF289_0%,_#00873F_100%)] shadow-[0px_6px_12px_rgba(11,125,70,0.43),0px_22px_22px_rgba(11,125,70,0.37),0px_51px_30px_rgba(11,125,70,0.22)]"
+						buttonClassName="mt-[12px] mb-[12px] w-full h-[52px] md:h-[56px] rounded-[8px] font-mulish font-extrabold text-[13px] md:text-[16px] leading-[145%] uppercase text-black [background:radial-gradient(50%_142.16%_at_50%_50%,_#2DF289_0%,_#00873F_100%)] shadow-[0px_6px_12px_rgba(11,125,70,0.43),0px_22px_22px_rgba(11,125,70,0.37),0px_51px_30px_rgba(11,125,70,0.22)]"
 					/>
 				</div>
 			</div>
