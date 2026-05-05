@@ -38,7 +38,7 @@ export default function ThirdSection() {
 						mb-8
 					"
 				>
-					ESSE ENCONTRO COM ELTON EULER
+					ESSE ENCONTRO COM OS MENTORES
 				</h2>
 
 				<div
@@ -259,7 +259,7 @@ export default function ThirdSection() {
 							hover:scale-[1.025]
 						"
 					>
-						QUERO PARTICIPAR DO ENCONTRO COM ELTON
+						QUERO FAZER A MINHA VIRADA FINANCEIRA
 					</button>
 				</div>
 			</div>

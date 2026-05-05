@@ -50,13 +50,13 @@ export default function FourthSection() {
 			>
 				<h2 className="text-center font-[Spectral] text-[32px] leading-[120%] w-full md:w-[544px] md:h-[76px]">
 					<span className="block font-normal text-[#00535D]">
-						PARTICIPE DA LIVE EXCLUSIVA
+						PARTICIPE DA VIRADA
 					</span>
 
 					<span className="block font-normal text-[#00535D]">
-						COM{" "}
+						{" "}
 						<span className="relative inline-block font-bold italic">
-							ELTON EULER
+							FINANCEIRA
 							<span className="absolute left-0 bottom-[-4px] w-full border-t-[2px] border-[#B7A36D]" />
 						</span>
 					</span>
@@ -170,7 +170,7 @@ export default function FourthSection() {
 							maxWidth: "413px",
 						}}
 					>
-						QUERO PARTICIPAR DO ENCONTRO COM ELTON
+						QUERO FAZER A MINHA VIRADA FINANCEIRA
 					</button>
 				</div>
 			</div>

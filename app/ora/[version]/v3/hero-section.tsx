@@ -6,7 +6,7 @@ import Image from "next/image";
 import {
 	LeadCaptureForm,
 	LeadCaptureSubmitData,
-} from "@/app/components/form/lead-capture-form";
+} from "./lead-capture-form-updated";
 import { getOraActiveHeadlineVariant } from "@/lib/config/ora-subdomain-headline-config";
 
 interface ContainerProps {
@@ -26,22 +26,22 @@ export default function HeroSection({
 	const subdomain = getOraActiveHeadlineVariant();
 
 	const marqueeLine =
-		"11 DE MAIO • LIVE EXCLUSIVA COM ELTON EULER • ESPECIAL PARA EX-ALIADOS •";
+		"11 DE MAIO • LIVE EXCLUSIVA COM OS MENTORES • ESPECIAL PARA EX-ALIADOS •";
 
 	return (
 		<section
 			id="hero"
 			className={`
 				relative
-				min-h-[1210px]
+				min-h-[1133px]
 				md:min-h-[900px]
 				flex
 				flex-col
 				justify-start
 				overflow-hidden
 				bg-[#071117]
-				bg-[url('/images/ora/v3/bg-hero-mobile.webp')]
-				md:bg-[url('/images/ora/v3/bg-hero-desktop.webp')]
+				bg-[url('/images/ora/v3/bg-hero-cida-mobile.webp')]
+				md:bg-[url('/images/ora/v3/bg-hero-cida-desktop.webp')]
 				bg-cover
 				bg-center
 				bg-no-repeat
@@ -125,7 +125,7 @@ export default function HeroSection({
 				<p className="mt-[16px] text-white font-mulish text-[14px] md:text-[16px] leading-[125%] w-full md:w-[527px]">
 					Nesse{" "}
 					<span className="font-extrabold">
-						encontro ao vivo com Elton Euler
+						encontro ao vivo com os mentores da Aliança Divergente
 					</span>
 					, você vai entender por que isso acontece e como a Aliança 2.0 foi criada para te ajudar nisso.
 				</p>
@@ -135,6 +135,7 @@ export default function HeroSection({
 						formName={formName}
 						onSubmit={onSubmit}
 						submitError={submitError}
+						submitLabel="QUERO FAZER A MINHA VIRADA FINANCEIRA"
 						nameInputClassName="w-full h-[52px] md:h-[56px] px-[16px] rounded-[8px] border border-[#6F6F6F] bg-[#0404040A] backdrop-blur-[20px] text-white placeholder:text-white font-mulish text-[16px]"
 						emailInputClassName="w-full h-[52px] md:h-[56px] px-[16px] rounded-[8px] border border-[#6F6F6F] bg-[#0404040A] backdrop-blur-[20px] text-white placeholder:text-white font-mulish text-[16px]"
 						ddiSelectClassName="h-[52px] md:h-[56px] py-4 pl-[40px] pr-[28px] bg-[#FFFFFF1A] rounded-l-[8px] border border-[#6F6F6F] text-white font-mulish text-[16px]"

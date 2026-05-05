@@ -27,7 +27,7 @@ export default function ContainerQuest({
   return (
     <div>
       <section
-        className={`relative flex items-start justify-center flex-col overflow-hidden min-h-screen bg-[url('/images/ora/v3/bg-quiz-mobile.webp')] md:bg-[url('/images/ora/v3/bg-quiz.webp')] bg-cover bg-center`}
+        className={`relative flex items-start justify-center flex-col overflow-hidden min-h-screen bg-[url('/images/ora/v3/bg-quiz-cida-mobile.webp')] md:bg-[url('/images/ora/v3/bg-quiz-cida.webp')] bg-cover bg-center`}
       >
         <div className="container mx-auto relative h-full px-4">
           <div className="flex flex-col items-center text-center pt-4 md:pt-8 pb-4">
@@ -56,7 +56,7 @@ export default function ContainerQuest({
                   LIVE EXCLUSIVA COM
                 </span>
                 <span className="block text-[24px] md:text-[50px] mt-1">
-                  ELTON EULER
+                  OS MENTORES
                 </span>
               </h1>
 
@@ -163,7 +163,7 @@ export default function ContainerQuest({
                     <span style={{ fontWeight: 700 }}>PASSO 1 -</span>{" "}
                     Clique no botão abaixo e entre agora mesmo para o grupo de WhatsApp oficial da{" "}
                     <span style={{ fontWeight: 700 }}>
-                      LIVE EXCLUSIVA COM ELTON EULER
+                      LIVE EXCLUSIVA COM OS MENTORES
                     </span>.{" "}
                     Lá você receberá todos os avisos e novidades importantes em primeira mão.
                   </p>

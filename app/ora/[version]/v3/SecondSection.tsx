@@ -234,7 +234,7 @@ export default function SecondSection() {
 							hover:scale-[1.025]
 						"
 						>
-							QUERO PARTICIPAR DO ENCONTRO COM ELTON
+							QUERO FAZER A MINHA VIRADA FINANCEIRA
 						</button>
 					</div>
 				</div>
