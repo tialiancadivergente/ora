@@ -26,7 +26,7 @@ export default function HeroSection({
 	const subdomain = getOraActiveHeadlineVariant();
 
 	const marqueeLine =
-		"11 DE MAIO • LIVE EXCLUSIVA COM OS MENTORES • ESPECIAL PARA EX-ALIADOS •";
+		"01 DE JUNHO • LIVE EXCLUSIVA COM OS MENTORES • ESPECIAL PARA EX-ALIADOS •";
 
 	return (
 		<section
@@ -95,7 +95,7 @@ export default function HeroSection({
 				<div className="flex flex-wrap items-center gap-x-[10px] gap-y-[8px] md:gap-[20px] mt-[16px] text-white font-mulish text-[12px] md:text-[16px]">
 					<div className="flex items-center gap-1.5">
 						<CalendarDays size={16} color="#C0964B" className="md:w-[18px] md:h-[18px]" />
-						<span>Segunda-feira, 11 de maio, às 20h</span>
+						<span>Segunda-feira, 01 de junho, às 20h</span>
 					</div>
 
 					<div className="flex items-center gap-1.5">
