@@ -132,7 +132,7 @@ export default function FourthSection() {
 					<div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-[#003036] font-[Mulish] text-[14px] leading-[145%] font-medium">
 						<div className="flex items-center gap-2">
 							<CalendarDays size={18} />
-							<span>Segunda-feira, 11 de maio, às 20h</span>
+							<span>Segunda-feira, 01 de junho, às 20h</span>
 						</div>
 
 						<div className="flex items-center gap-2">
