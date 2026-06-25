@@ -62,13 +62,13 @@ export default function FourthSection() {
 					</span>
 				</h2>
 
-				<p className="mt-4 text-center font-[Mulish] font-bold text-[20px] leading-[145%] text-[#003036]">
-					E conheça a nova Aliança Divergente 2.0
+				<p className="mt-4 w-full md:w-[544px] text-center font-[Mulish] font-bold text-[16px] md:text-[20px] leading-[145%] text-[#003036]">
+					E conheça o novo Marca-Passos com inteligência artificial integrada
 				</p>
 
-				<div className="mt-3 text-center text-[#003036] font-[Mulish] text-[16px] leading-[145%] md:mt-6">
+				<div className="mt-3 w-full md:w-[544px] text-center text-[#003036] font-[Mulish] text-[16px] leading-[145%] md:mt-6">
 					<p>
-						Um encontro ao vivo para quem já conhece o método e quer aprofundar a forma como lida com sua vida financeira.
+						Um encontro ao vivo com os mentores da Aliança Divergente pra quem já viveu o processo, sabe que funciona, mas ainda precisa destravar o financeiro.
 					</p>
 
 					<p className="mt-3 md:mt-6 font-bold text-[16px] leading-[145%]">
@@ -80,7 +80,7 @@ export default function FourthSection() {
 					{subdomain === "gg" ? (
 						<>
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
-								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+								<ul className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
 									<li>• Entender quais padrões impactam suas decisões financeiras</li>
 									<li>• Identificar comportamentos que se repetem sem você perceber</li>
 									<li>• Desenvolver mais clareza sobre sua organização financeira</li>
@@ -93,7 +93,7 @@ export default function FourthSection() {
 							</p>
 
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[120px]">
-								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+								<ul className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
 									<li>• Mais consciência nas decisões</li>
 									<li>• Mais consistência no dia a dia</li>
 									<li>• Mais organização financeira</li>
@@ -104,22 +104,22 @@ export default function FourthSection() {
 					) : (
 						<>
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] min-h-[51px]">
-								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+								<p className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
 									<span className="font-bold">Entender o que faz o dinheiro não ficar</span> e parar de repetir o mesmo ciclo.
 								</p>
 							</div>
 
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] min-h-[51px]">
-								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+								<p className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
 									<span className="font-bold">Identificar o padrão que opera no seu financeiro</span> sem você perceber.
 								</p>
 							</div>
 
 							<div className="w-full md:w-[544px] bg-[#B7A36D] px-[16px] py-[14px] flex flex-col gap-[10px] md:min-h-[159px]">
-								<p className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
-									<span className="font-bold">Conhecer a nova Aliança 2.0</span> e como ela foi pensada pra te dar:
+								<p className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
+									<span className="font-bold">Conhecer o novo Marca-Passos com inteligência artificial integrada</span> e como ele foi pensado pra te dar:
 								</p>
-								<ul className="text-[#003036] font-[Mulish] text-[16px] leading-[145%] tracking-[-0.03em]">
+								<ul className="text-[#003036] font-[Mulish] text-[14px] md:text-[16px] leading-[145%] tracking-[0em] md:tracking-[-0.03em]">
 									<li>* Dinheiro sobrando na conta todo mês.</li>
 									<li>* Independência financeira de verdade.</li>
 									<li>* Quitação das dívidas que arrastam.</li>
@@ -132,7 +132,7 @@ export default function FourthSection() {
 					<div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-[#003036] font-[Mulish] text-[14px] leading-[145%] font-medium">
 						<div className="flex items-center gap-2">
 							<CalendarDays size={18} />
-							<span>Segunda-feira, 01 de junho, às 20h</span>
+							<span>Segunda-feira, 06/07 às 20h</span>
 						</div>
 
 						<div className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function FourthSection() {
 					</div>
 				</div>
 
-				<div className="mt-12 md:mt-14 w-full">
+				<div className="mt-12 md:mt-8 w-full">
 					<button
 						onClick={() => handleScroll()}
 						className="

@@ -81,7 +81,7 @@ export default function ContainerQuest({
                     }}
                   >
                     <span className="hidden md:block md:text-[20px]">
-                      EVENTO ONLINE SEM REPLAY | 01 de junho, às 20h
+                      EVENTO ONLINE SEM REPLAY | Segunda-feira, 06/07 às 20h
                     </span>
 
                     <span className="block md:hidden">
@@ -211,7 +211,7 @@ export default function ContainerQuest({
                       color: "#00535D",
                     }}
                   >
-                    Nos vemos no dia 01/06.
+                    Nos vemos no dia 06/07.
                   </p>
                 </div>
 

@@ -90,7 +90,7 @@ export default function ContainerQuest({
               <div className="flex items-center justify-center flex-col md:flex-row gap-1 md:gap-2">
                 <div className="flex items-center gap-2">
                   <Calendar size={24} color="#C0964B" />
-                  <div className="text-white text-xl font-medium">Segunda-feira, 23/03, às 20h</div>
+                  <div className="text-white text-xl font-medium">Segunda-feira, 06/07 às 20h</div>
                 </div>
                 <div className="w-[1px] md:h-[24px] h-[1px] bg-[#C0964B]" />
                 <div className="flex items-center gap-2">
