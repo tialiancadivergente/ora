@@ -53,10 +53,10 @@ export default function ContainerQuest({
                 }}
               >
                 <span className="block text-[24px] md:text-[50px]">
-                  LIVE EXCLUSIVA COM
+                  A VIRADA
                 </span>
                 <span className="block text-[24px] md:text-[50px] mt-1">
-                  OS MENTORES
+                  FINANCEIRA
                 </span>
               </h1>
 
@@ -87,7 +87,7 @@ export default function ContainerQuest({
                     <span className="block md:hidden">
                       EVENTO ONLINE SEM REPLAY
                       <br />
-                      01 de junho às 20h
+                      Segunda-feira, 06/07 às 20h
                     </span>
                   </p>
                 </div>
@@ -163,7 +163,7 @@ export default function ContainerQuest({
                     <span style={{ fontWeight: 700 }}>PASSO 1 -</span>{" "}
                     Clique no botão abaixo e entre agora mesmo para o grupo de WhatsApp oficial da{" "}
                     <span style={{ fontWeight: 700 }}>
-                      LIVE EXCLUSIVA COM OS MENTORES
+                      A VIRADA FINANCEIRA
                     </span>.{" "}
                     Lá você receberá todos os avisos e novidades importantes em primeira mão.
                   </p>

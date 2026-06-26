@@ -43,7 +43,7 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Live Exclusiva com Mentores",
+  title: "A Virada Financeira",
   description:
     "Faça seu diagnóstico de dependência emocional gratuito e descubra como aumentar seu nível de permissão.",
   icons: {

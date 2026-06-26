@@ -61,15 +61,7 @@ export default function SecondSection() {
 							mb-6
 						"
 					>
-						{subdomain === "gg" ? (
-							<>
-								POR QUE PARECE DIFÍCIL MANTER CONSISTÊNCIA FINANCEIRA?
-							</>
-						) : (
-							<>
-								POR QUE O DINHEIRO ATÉ ENTRA, MAS NÃO FICA?
-							</>
-						)}
+						POR QUE O DINHEIRO ATÉ ENTRA, MAS NÃO FICA?
 					</h2>
 
 					<div
@@ -83,112 +75,57 @@ export default function SecondSection() {
 							space-y-4
 						"
 					>
-						{subdomain === "gg" ? (
-							<>
-								<p>
-									Você já provou que tem capacidade. Já trabalhou duro. Já se sacrificou.
-									Já teve meses bons. Já achou que tinha pegado o jeito.
-								</p>
+						<>
+							<p>
+								Você já provou que tem capacidade. Já trabalhou duro. Já fez sua
+								parte. Já teve meses bons. Já achou que tinha pegado o jeito.
+							</p>
 
-								<p>Mas, com o tempo, as coisas param de funcionar.</p>
+							<p>Mas o dinheiro continua sumindo.</p>
 
-								<p>
-									Você volta a uma situação financeira que achou que já tinha superado.
-									A estabilidade que parecia perto se perde novamente.
-								</p>
+							<p>
+								A conta zera. A dívida volta. E a estabilidade que parecia perto vai
+								embora de novo.
+							</p>
 
-								<p>Isso não é, necessariamente, falta de esforço.</p>
+							<p>
+								E esse ciclo não é falta de esforço. Não é falta de disciplina. Não
+								é porque você não sabe lidar com dinheiro.
+							</p>
 
-								<p>
-									Muitas vezes, existe um padrão de comportamento que influencia diretamente
-									a forma como você lida com dinheiro — e que não é fácil de perceber sozinho.
-								</p>
+							<p>
+								É porque existe um padrão presente no seu financeiro que você não
+								consegue ver sozinho.
+							</p>
 
-								<p>
-									Um padrão que interfere nas suas decisões, na sua constância e na forma como
-									você organiza sua vida financeira no dia a dia.
-								</p>
+							<p>
+								Um padrão que faz o dinheiro entrar, mas não ficar. Que faz você
+								ganhar mais, mas não sobrar mais. Que faz você quitar uma dívida e
+								criar outra sem nem perceber.
+							</p>
 
-								<div>
-									<span className="text-[#E0D0A6] font-extrabold block mb-2">
-										E este encontro foi pensado para te ajudar a:
-									</span>
+							<p>
+								E este encontro foi pensado para que você consiga identificar qual é
+								o SEU padrão.
+							</p>
 
-									<ul className="list-disc pl-5 space-y-1">
-										<li>Identificar qual é o seu padrão</li>
-										<li>Entender como ele impacta suas decisões</li>
-										<li>Perceber em que momentos ele se ativa</li>
-										<li>E avaliar, com mais clareza, os próximos passos</li>
-									</ul>
-								</div>
+							<p>Ver onde e como ele age no seu financeiro.</p>
 
-								<p>
-									É um acesso exclusivo a uma nova forma de olhar para sua vida financeira,
-									com o suporte dos mentores da Aliança Divergente.
-								</p>
-							</>
-						) : (
-							<>
-								<p>
-									Você já provou que tem capacidade. Já trabalhou duro. Já fez sua
-									parte. Já teve meses bons. Já achou que tinha pegado o jeito.
-								</p>
+							<p>
+								Entender por que ele se ativa exatamente quando você está prestes a
+								estabilizar.
+							</p>
 
-								<p>Mas o dinheiro continua sumindo.</p>
+							<p>
+								E decidir se você quer continuar nesse ciclo... ou se você está
+								pronto para romper e garantir um futuro melhor.
+							</p>
 
-								<p>
-									A conta zera. A dívida volta. E a estabilidade que parecia perto vai
-									embora de novo.
-								</p>
-
-								<p>
-									E esse ciclo{" "}
-									<span className="text-[#E0D0A6] font-bold">
-										não é falta de esforço.
-									</span>{" "}
-									Não é falta de disciplina. Não é porque você não sabe lidar com
-									dinheiro.
-								</p>
-
-								<p>
-									<span className="text-[#E0D0A6] font-bold">
-										É porque existe um padrão presente no seu financeiro que você não
-										consegue ver sozinho.
-									</span>
-								</p>
-
-								<p>
-									Um padrão que faz o dinheiro entrar, mas não ficar. Que faz você
-									ganhar mais, mas não sobrar mais. Que faz você quitar uma dívida e
-									criar outra sem nem perceber.
-								</p>
-
-								<p>
-									E este encontro foi pensado para que você consiga{" "}
-									<span className="text-[#E0D0A6] font-bold">
-										identificar qual é o SEU padrão.
-									</span>
-								</p>
-
-								<p>Ver onde e como ele age no seu financeiro.</p>
-
-								<p>
-									Entender por que ele se ativa exatamente quando você está prestes a
-									estabilizar.
-								</p>
-
-								<p>
-									E decidir se você quer continuar nesse ciclo...{" "}
-									<span className="text-[#E0D0A6] font-bold">
-										ou se você está pronto para romper e garantir um futuro melhor.
-									</span>
-								</p>
-
-								<p>
-									É a sua chance de ter acesso único aos mentores da Aliança Divergente.
-								</p>
-							</>
-						)}
+							<p>
+								É a sua chance de ter acesso único aos mentores da Aliança
+								Divergente.
+							</p>
+						</>
 					</div>
 
 					<div className="mt-[16px] md:mt-[32px] mb-8 md:mb-0 w-full">
