@@ -37,8 +37,8 @@ export default function HeroSection({
 				justify-start
 				overflow-hidden
 				bg-[#071117]
-				bg-[url('/images/ora/v3/bg_versao_cida_jordao_mobile.webp')]
-				md:bg-[url('/images/ora/v3/bg_versao_cida_jordao_desktop.webp')]
+				bg-[url('/images/ora/v3/bg_versao_cida_jordao_mobile.png')]
+				md:bg-[url('/images/ora/v3/bg_versao_cida_jordao_desktop.png')]
 				bg-cover
 				bg-center
 				bg-no-repeat
@@ -108,7 +108,7 @@ export default function HeroSection({
 					<span className="font-bold">
 						ao vivo com os mentores da Aliança Divergente
 					</span>
-					, você
+					, você{" "}
 					<br className="hidden md:block" />
 					vai entender por que isso acontece e como o{" "}
 					<span className="font-bold">
