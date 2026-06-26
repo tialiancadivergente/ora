@@ -53,10 +53,9 @@ export default function ContainerQuest({
                 }}
               >
                 <span className="block text-[24px] md:text-[50px]">
-                  A VIRADA
+                  A VIRADA FINANCEIRA
                 </span>
                 <span className="block text-[24px] md:text-[50px] mt-1">
-                  FINANCEIRA
                 </span>
               </h1>
 
