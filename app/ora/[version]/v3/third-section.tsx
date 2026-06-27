@@ -149,7 +149,7 @@ export default function ThirdSection() {
 								</div>
 
 								<p className="font-[Mulish] font-normal text-[14px] md:text-[16px] leading-[145%] text-white">
-								Você quer <span className="font-bold">sair da montanha-russa e ter estabilidade</span> pra planejar o futuro sem aquela ansiedade.
+								Você quer <span className="font-bold">sair da montanha-russa e ter estabilidade</span>
 								</p>
 							</div>
 						</div>
