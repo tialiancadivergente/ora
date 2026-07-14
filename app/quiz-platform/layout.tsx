@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "A Virada Financeira",
+  title: "A Retomada Financeira",
   description:
     "Nesse encontro ao vivo com os mentores, você vai entender por que isso acontece e como a Aliança 2.0 foi criada para te ajudar nisso.",
 };

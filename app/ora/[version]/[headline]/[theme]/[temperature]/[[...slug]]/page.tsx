@@ -6,6 +6,8 @@ import Formv2 from "@/app/ora/[version]/v2";
 import SplashScreenOro from "@/app/components/SplashScreen/SplashScreenOro";
 import Formv3 from "@/app/ora/[version]/v3";
 import Formv4 from "@/app/ora/[version]/v4";
+import Formv5 from "@/app/ora/[version]/v5";
+
 
 export default function Home() {
   const { version, slug } = useParams();
@@ -22,6 +24,10 @@ export default function Home() {
 
   if (version === "v4") {
     return <Formv4 />;
+  }
+
+  if (version === "v5") {
+    return <Formv5 />;
   }
 
   return (
