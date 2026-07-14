@@ -2,69 +2,64 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useParams } from "next/navigation";
+import { useParams } from 'next/navigation'
 
-// Lista de assets críticos para pré-carregar
 const criticalAssets = {
   images: [
-    '/images/logo.png',
+    '/images/ora/v4/Group 1.png',
     '/images/hero-images.png',
     '/images/journey-background.png',
-    // Adicione outras imagens críticas
-  ]
+  ],
 }
 
 export default function SplashScreenOro({ children, theme }: { children: React.ReactNode; theme?: string }) {
-  const params = useParams();
+  const params = useParams()
   const [loading, setLoading] = useState(true)
   const [progress, setProgress] = useState(0)
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
-    const paramValue = params.temperatura as string || "";
-    const parts = paramValue.split("-") || [];
-    const isDarkValue = parts[2] || "";
+    const paramValue = (params.temperatura as string) || ''
+    const parts = paramValue.split('-')
+    const isDarkValue = parts[2] || ''
 
-    if (params.theme === "2" || isDarkValue === "h2" || theme === "2") {
-      setIsDark(false);
+    if (params.theme === '2' || isDarkValue === 'h2' || theme === '2') {
+      setIsDark(false)
     } else {
-      setIsDark(true);
+      setIsDark(true)
     }
-  }, [params.theme]);
+  }, [params.theme, params.temperatura, theme])
 
   useEffect(() => {
-    let totalAssets = criticalAssets.images.length
+    const totalAssets = criticalAssets.images.length
     let loadedAssets = 0
-    
+
     const updateProgress = () => {
       loadedAssets++
       const newProgress = Math.round((loadedAssets / totalAssets) * 100)
       setProgress(newProgress)
-      
+
       if (loadedAssets === totalAssets) {
-        // Adiciona um pequeno atraso para uma transição suave
         setTimeout(() => {
           setLoading(false)
         }, 1000)
       }
     }
-    
-    // Pré-carregar imagens
-    criticalAssets.images.forEach(src => {
+
+    criticalAssets.images.forEach((src) => {
       const img = new Image()
       img.src = src
       img.onload = updateProgress
-      img.onerror = updateProgress // Continua mesmo com erro
+      img.onerror = updateProgress
     })
-    
-    // Timeout de segurança (caso algo falhe)
+
     const safetyTimeout = setTimeout(() => {
       setLoading(false)
     }, 5000)
-    
+
     return () => clearTimeout(safetyTimeout)
   }, [])
-  
+
   return (
     <AnimatePresence mode="wait">
       {loading ? (
@@ -73,38 +68,32 @@ export default function SplashScreenOro({ children, theme }: { children: React.R
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 flex flex-col items-center justify-center sm:bg-center bg-left bg-cover bg-no-repeat z-50"
-          style={{ backgroundImage: `${isDark ? "url('/images/ora/quiz/bg-quiz.webp')" : "url('/images/ora/quiz/bg-quiz.webp')"}` }}
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#071117]"
         >
-          <motion.img 
-            src={isDark ? "/images/ora/logo_o_proximo_nivel.png" : "/images/ora/logo_o_proximo_nivel.png"} 
-            alt="Logo O Proximo Nivel"
+          <motion.img
+            src="/images/ora/v4/Group 1.png"
+            alt="Logo V4 Group"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-[175px] mb-8"
+            className="mb-8 w-[175px]"
           />
-          <div className="w-64 h-2 bg-[#07242c] rounded-full overflow-hidden">
-            <motion.div 
+
+          <div className="h-2 w-64 overflow-hidden rounded-full bg-[#07242c]">
+            <motion.div
               className="h-full"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
-              style={{ backgroundColor: "#C0964B" }}
-            ></motion.div>
+              style={{ backgroundColor: '#C0964B' }}
+            />
           </div>
         </motion.div>
       ) : (
-        <motion.div
-          key="content"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="min-h-screen"
-        >
+        <motion.div key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="min-h-screen">
           {children}
         </motion.div>
       )}
     </AnimatePresence>
   )
-} 
+}
