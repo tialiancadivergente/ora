@@ -16,7 +16,7 @@ export default function FourthSection() {
 		<section
 			id="quarta-dobra"
 			aria-labelledby="quarta-dobra-titulo"
-			className="relative h-[533px] w-full overflow-hidden bg-[#071117] bg-[url('/images/ora/v4/quarta_dobra_mobile.png')] bg-[length:auto_533px] bg-center bg-top bg-no-repeat md:h-[977px] md:bg-[url('/images/ora/v4/quarta_dobra_desktop.png')] md:bg-[length:auto_977px] md:bg-center md:bg-top"
+			className="relative h-[533px] w-full overflow-hidden bg-[#071117] bg-[url('/images/ora/v4/quarta_dobra_mobile.png')] bg-[length:auto_533px] bg-center bg-top bg-no-repeat md:h-[977px] md:bg-[url('/images/ora/v4/bg_quarta_dobra_sem_mentores.png')] md:bg-[length:auto_977px] md:bg-center md:bg-top"
 		>
 			<div className="relative mx-auto h-full w-full max-w-[1920px]">
 				<div className="absolute left-1/2 top-[27px] w-[331.34px] max-w-[calc(100%-32px)] -translate-x-1/2 md:left-[150px] md:top-[220px] md:w-[632px] md:max-w-none md:translate-x-0">

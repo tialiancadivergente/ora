@@ -18,7 +18,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: Contain
 		<section
 			id="hero"
 			aria-labelledby="hero-title"
-			className="relative h-[809px] w-full overflow-hidden bg-[#071117] bg-[url('/images/ora/v4/bg_segunda_dobra_mobile.png')] bg-[length:auto_809px] bg-top bg-center bg-no-repeat md:h-[835px] md:bg-[url('/images/ora/v4/bg_primeira_dobra_descktop.png')] md:bg-[length:auto_835px]"
+			className="relative h-[809px] w-full overflow-hidden bg-[#071117] bg-[url('/images/ora/v4/bg_sem_mentores_mobile.png')] bg-[length:auto_809px] bg-top bg-center bg-no-repeat md:h-[835px] md:bg-[url('/images/ora/v4/bg_sem_mentores_desktop.png')] md:bg-[length:auto_835px]"
 		>
 			<div className="relative z-10 mx-auto flex h-full w-full max-w-[480px] flex-col items-center px-4 pt-[80px] text-center md:mx-0 md:ml-[clamp(72px,9.4vw,180px)] md:w-[527px] md:max-w-none md:items-start md:px-0 md:pt-[20px] md:text-left">
 				<div className="flex items-center justify-center gap-[16px] whitespace-nowrap font-mulish text-[10px] leading-[145%] text-white md:justify-start md:gap-[24px] md:text-[14px]">
