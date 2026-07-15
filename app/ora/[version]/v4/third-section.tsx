@@ -16,7 +16,7 @@ const positiveItems: ReactNode[] = [
 	<>Você quer <strong>entender por que o dinheiro vai embora</strong> mesmo nos meses que você ganha bem.</>,
 	<>Você quer <strong>independência financeira de verdade.</strong> Suas escolhas. Sua vida. Sem depender de ninguém.</>,
 	<>Você quer <strong>quitar as dívidas que tão arrastando</strong> e finalmente limpar o nome.</>,
-	<>Você quer <strong>sair da montanha-russa e ter estabilidade</strong> pra planejar o futuro sem aquela ansiedade.</>,
+	<>Você quer <strong>sair da montanha-russa e ter estabilidade.</strong></>,
 ];
 
 function CardItem({ positive = false, children }: { positive?: boolean; children: ReactNode }) {
@@ -65,7 +65,9 @@ export default function ThirdSection() {
 					</h3>
 
 					<div className="flex flex-col gap-[12px] md:gap-4">
-						{negativeItems.map((item, index) => <CardItem key={index}>{item}</CardItem>)}
+						{negativeItems.map((item, index) => (
+							<CardItem key={index}>{item}</CardItem>
+						))}
 					</div>
 				</div>
 
@@ -77,7 +79,11 @@ export default function ThirdSection() {
 					</h3>
 
 					<div className="flex flex-col gap-[11px] md:gap-4">
-						{positiveItems.map((item, index) => <CardItem key={index} positive>{item}</CardItem>)}
+						{positiveItems.map((item, index) => (
+							<CardItem key={index} positive>
+								{item}
+							</CardItem>
+						))}
 					</div>
 				</div>
 

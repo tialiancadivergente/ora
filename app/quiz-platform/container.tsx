@@ -75,13 +75,13 @@ export default function ContainerQuest({
                     }}
                   >
                     <span className="hidden md:block md:text-[20px]">
-                      Segunda-feira • 06 de julho • às 20h
+                      Segunda-feira • 20 de julho • às 20h
                     </span>
 
                     <span className="block md:hidden">
                       Segunda-feira
                       <br />
-                      06 de julho • às 20h
+                      20 de julho • às 20h
                     </span>
                   </p>
                 </div>
@@ -155,7 +155,7 @@ export default function ContainerQuest({
                     botão abaixo e entre agora mesmo para o grupo de WhatsApp
                     oficial da{" "}
                     <span style={{ fontWeight: 700 }}>
-                      A VIRADA FINANCEIRA
+                      A RETOMADA FINANCEIRA
                     </span>
                     . Lá você receberá todos os avisos e novidades importantes
                     em primeira mão.
